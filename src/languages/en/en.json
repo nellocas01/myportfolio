@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "myName": "Aniello_Casolla",
+    "about": "About_me",
+    "skill": "Skill",
+    "projects": "My_projects",
+    "contacts": "Contacts",
+    "colors": [
+      "#E8D2A5",
+      "#E8E8A5",
+      "#CCE8A5",
+      "#ABE8A5",
+      "#A5E8B9",
+      "#A5E8D3",
+      "#A5E0E8",
+      "#A5DDE8"
+    ]
+  },
+  "about": {
+    "title": "Who I am",
+    "text": "I am a Full-Stack Developer with a solid foundation in programming, but always studying and updating to improve my skills every day. After having completed an intensive master's degree that enabled me to acquire most of my knowledge, I am now embarking on my first work experience in this field, where I try to improve my current skills, but also develop new ones. I consider myself an excellent worker, as I am also completely available for team-working. I am a perceptive person, even when faced with difficulties I try to overcome them as best I can, if there is a challenge I do not shy away from it."
+  },
+  "cv": "Download my CV",
+  "skills": {
+    "title": "Main_Skills",
+    "subtitle": "The skills, tools and technologies i use :"
+  },
+  "blog": {
+    "h2": "My experience",
+    "data": "jan 2023 - jul 2023",
+    "tecn": "Technologies: ",
+    "h6": "DS1 Level 1 Postgraduate Diploma in Science of Economics and Business Management,",
+    "h66": "Business administration and management",
+    "data2": "sep 2015 - jun 2020",
+    "voto": "Voting"
+  },
+  "home": {
+    "h4": "Naples, Campania, Italy",
+    "h5": "Download my CV"
+  },
+  "formcontrol": {
+    "app": "Choose the theme"
+  }
+}

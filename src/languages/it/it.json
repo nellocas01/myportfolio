@@ -1,0 +1,44 @@
+{
+  "navbar": {
+    "myName": "Casolla_Aniello",
+    "about": "Su_di_me",
+    "skill": "Abilità",
+    "projects": "Progetti_personali",
+    "contacts": "Contatti",
+    "colors": [
+      "#E8D2A5",
+      "#E8E8A5",
+      "#CCE8A5",
+      "#ABE8A5",
+      "#A5E8B9",
+      "#A5E8D3",
+      "#A5E0E8",
+      "#A5DDE8"
+    ]
+  },
+  "about": {
+    "title": "Chi sono",
+    "text": "Sono uno sviluppatore Full-Stack con solide basi di programmazione, ma sempre in fase di studio e aggiornamento per migliorare le mie competenze ogni giorno. Dopo aver completato un master intensivo che mi ha permesso di acquisire la maggior parte delle mie conoscenze, le sto applicando quotidianamente grazie alla mia prima esperienza lavorativa in questo campo, dove cerco di migliorare le mie attuali competenze, ma anche di svilupparne continuamente di nuove. Mi considero un'ottima lavoratrice, in quanto sono anche completamente disponibile al lavoro di squadra. Sono una persona perspicace, anche di fronte alle difficoltà cerco di superarle al meglio, se c'è una sfida non mi sottraggo."
+  },
+  "cv": "Scarica il mio CV",
+  "skills": {
+    "title": "Competenze_Principali",
+    "subtitle": "Le competenze, gli strumenti e le tecnologie che utilizzo :"
+  },
+  "blog": {
+    "h2": "La mia esperienza",
+    "data": "gen 2023 - lug 2023",
+    "tecn": "Tecnologie: ",
+    "h6": "Diploma di Specializzazione di 1° livello DS1 in Scienze dell'Economia e della Gestione Aziendale,",
+    "h66": "Amministrazione e gestione aziendale",
+    "data2": "set 2015 - giu 2020",
+    "voto": "Votazione"
+  },
+  "home": {
+    "h4": "Napoli, Campania, Italia",
+    "h5": "Scarica il mio CV"
+  },
+  "formcontrol": {
+    "app": "Scegli il tema"
+  }
+}
