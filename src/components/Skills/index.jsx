@@ -12,18 +12,24 @@ import JestIcon from "../../assets/jesticn.png";
 import JavaIcon from "../../assets/javaicn.png";
 import SpringbootIcon from "../../assets/springbooticn.png";
 import GitIcon from "../../assets/giticn.png";
+import { useThemeContext } from "../../context/theme";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
+  const { isMobile } = useThemeContext();
+
   return (
     <>
-      <Container sx={{ marginY: "5rem" }}>
+      <Container sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}>
         <ColoredText
-          variant={"h4"}
+          variant={isMobile ? "h5" : "h4"}
           text={t("skills.title")}
           colors={NavbarData.colors}
-          style={{ justifyContent: "end", marginBottom: "1rem" }}
+          style={{
+            justifyContent: isMobile ? "center" : "end",
+            marginBottom: "1rem",
+          }}
         />
         <Typography>{t("skills.subtitle")}</Typography>
         <Box

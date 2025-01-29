@@ -12,9 +12,11 @@ import ColoredText from "../Text/index";
 import { NavbarData } from "../../mockup/index";
 import avt from "../../assets/AvatarMaker.png";
 import "./style.css";
+import { useThemeContext } from "../../context/theme";
 
 const About = () => {
   const { t } = useTranslation();
+  const { isMobile } = useThemeContext();
 
   const onButtonClick = () => {
     const pdfUrl = "/assets/Casolla-Aniello-CV.pdf";
@@ -28,11 +30,20 @@ const About = () => {
 
   return (
     <>
-      <Container sx={{ marginTop: "8rem", display: "flex" }}>
-        <Box sx={{ marginRight: "7rem" }}>
+      <Container
+        sx={{
+          marginTop: "8rem",
+          display: "flex",
+          flexDirection: isMobile ? "column" : "row",
+          alignItems: "center",
+          textAlign: isMobile ? "center" : "left",
+          gap: 2,
+        }}
+      >
+        <Box sx={{ marginRight: isMobile ? 0 : 7 }}>
           <ColoredText
             className="text-flicker-in-glow"
-            variant={"h3"}
+            variant={isMobile ? "h5" : "h3"}
             text="Frontend_Developer"
             colors={NavbarData.colors}
           />
@@ -45,7 +56,11 @@ const About = () => {
           <Avatar
             alt="Il mio avatar"
             src={avt}
-            sx={{ width: 200, height: 200 }}
+            sx={{
+              width: isMobile ? 150 : 200,
+              height: isMobile ? 150 : 200,
+              marginTop: isMobile ? 2 : 0,
+            }}
           />
         </Box>
       </Container>

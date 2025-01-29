@@ -1,36 +1,100 @@
-import React from "react";
-import { AppBar, Toolbar, Box } from "@mui/material";
-import Divider, { dividerClasses } from "@mui/material/Divider";
+import React, { useState } from "react";
+import {
+  AppBar,
+  Toolbar,
+  Box,
+  IconButton,
+  Drawer,
+  List,
+  ListItem,
+  ListItemText,
+  Divider,
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import { useTranslation } from "react-i18next";
 import ColoredText from "../Text";
 import { NavbarData } from "../../mockup/index";
 import CustomizedSwitches from "../Switch";
-import { useTranslation } from "react-i18next";
+import { useThemeContext } from "../../context/theme";
 
 const Navbar = () => {
   const { t } = useTranslation();
+  const { isMobile } = useThemeContext();
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const handleDrawerToggle = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
+  const menuItems = [
+    { label: t("navbar.about") },
+    { label: t("navbar.skill") },
+    { label: t("navbar.projects") },
+    { label: t("navbar.contacts") },
+  ];
 
   return (
-    <AppBar position="static" color="transparent">
+    <AppBar
+      position="static"
+      color="transparent"
+      sx={{ display: "flex", alignItems: isMobile ? "center" : "stretch" }}
+    >
       <Toolbar>
-        <ColoredText variant={"h4"} text={t("navbar.myName")} colors={NavbarData.colors} />
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            [`& .${dividerClasses.root}`]: {
-              mx: 1,
-            },
-          }}
-        >
-          <ColoredText variant={"h6"} text={t("navbar.about")} colors={NavbarData.colors} />
-          <Divider />
-          <ColoredText variant={"h6"} text={t("navbar.skill")} colors={NavbarData.colors} />
-          <Divider />
-          <ColoredText variant={"h6"} text={t("navbar.projects")} colors={NavbarData.colors} />
-          <Divider />
-          <ColoredText variant={"h6"} text={t("navbar.contacts")} colors={NavbarData.colors} />
-          <CustomizedSwitches />
-        </Box>
+        {/* Nome a sinistra */}
+        <ColoredText
+          variant={isMobile ? "h5" : "h4"}
+          text={t("navbar.myName")}
+          colors={NavbarData.colors}
+        />
+
+        {/* Navbar Desktop */}
+        {!isMobile ? (
+          <Box sx={{ display: "flex", alignItems: "center" }}>
+            {menuItems.map((item, index) => (
+              <React.Fragment key={index}>
+                <ColoredText
+                  variant="h6"
+                  text={item.label}
+                  colors={NavbarData.colors}
+                />
+                {index < menuItems.length - 1 && <Divider sx={{ mx: 1 }} />}
+              </React.Fragment>
+            ))}
+            <CustomizedSwitches />
+          </Box>
+        ) : (
+          // Navbar Mobile: Hamburger Menu
+          <>
+            <IconButton
+              edge="end"
+              color="inherit"
+              onClick={handleDrawerToggle}
+              sx={{ paddingLeft: 3 }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Drawer
+              anchor="right"
+              open={drawerOpen}
+              onClose={handleDrawerToggle}
+            >
+              <Box sx={{ width: 250 }}>
+                <List>
+                  {menuItems.map((item, index) => (
+                    <React.Fragment key={index}>
+                      <ListItem button onClick={handleDrawerToggle}>
+                        <ListItemText primary={item.label} />
+                      </ListItem>
+                      {index < menuItems.length - 1 && <Divider />}
+                    </React.Fragment>
+                  ))}
+                  <CustomizedSwitches />
+                </List>
+              </Box>
+            </Drawer>
+          </>
+        )}
       </Toolbar>
     </AppBar>
   );

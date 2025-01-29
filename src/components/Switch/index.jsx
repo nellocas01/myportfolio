@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useThemeContext } from "../../context/theme";
 import { useTranslation } from "react-i18next";
 import { ThemeSwitch } from "./theme";
@@ -7,9 +7,9 @@ import { LanguageSwitch } from "./language";
 
 export default function CustomizedSwitches() {
   // stato che gestisce il tema
-  const { isDarkMode, toggleTheme } = useThemeContext();
+  const { isDarkMode, toggleTheme, isMobile } = useThemeContext();
   // stato che gestisce il cambio lingua
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   // Funzione per cambiare lingua
   const changeLanguage = (lng) => {
@@ -26,21 +26,28 @@ export default function CustomizedSwitches() {
 
   return (
     <>
-      <Box>
-        {/* Switch per il cambio tema */}
-        <ThemeSwitch
-          sx={{ m: 1 }}
-          checked={isDarkMode}
-          onChange={toggleTheme}
-        />
-      </Box>
-      {/* Switch per il cambio lingua */}
-      <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
-        <LanguageSwitch
-          checked={localStorage.getItem("selectedLanguage") === "it"}
-          onChange={(e) => changeLanguage(e.target.checked ? "it" : "en")}
-          inputProps={{ "aria-label": "Language toggle" }}
-        />
+      {isMobile && (
+        <Typography sx={{ marginTop: 4, paddingLeft: 1 }}>
+          {t("navbar.isMobile")}
+        </Typography>
+      )}
+      <Box sx={{ display: isMobile ? "flex" : "block" }}>
+        <Box>
+          {/* Switch per il cambio tema */}
+          <ThemeSwitch
+            sx={{ m: 1 }}
+            checked={isDarkMode}
+            onChange={toggleTheme}
+          />
+        </Box>
+        {/* Switch per il cambio lingua */}
+        <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+          <LanguageSwitch
+            checked={localStorage.getItem("selectedLanguage") === "it"}
+            onChange={(e) => changeLanguage(e.target.checked ? "it" : "en")}
+            inputProps={{ "aria-label": "Language toggle" }}
+          />
+        </Box>
       </Box>
     </>
   );

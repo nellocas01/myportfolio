@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import ColoredText from "../Text/index";
 import { NavbarData } from "../../mockup/index";
 import Cards from "../Card/index";
+import { useThemeContext } from "../../context/theme";
+
 // Import manuale delle immagini
 import soccerballicn from "../../assets/soccerball.png";
 import soccerballbwicn from "../../assets/soccerballbw.png";
@@ -29,12 +31,13 @@ const getImageUrl = (image) => {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
+  const { isMobile } = useThemeContext();
   const projects = t("projects.array", { returnObjects: true });
 
   return (
-    <Container sx={{ marginY: 5 }}>
+    <Container sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}>
       <ColoredText
-        variant={"h4"}
+        variant={isMobile ? "h5" : "h4"}
         text={t("projects.title")}
         colors={NavbarData.colors}
         style={{ justifyContent: "start", marginBottom: 1 }}
