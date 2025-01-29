@@ -25,6 +25,51 @@
     "title": "Competenze_Principali",
     "subtitle": "Le competenze, gli strumenti e le tecnologie che utilizzo :"
   },
+  "projects": {
+    "title": "Progetti_Personali",
+    "array": [
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P1",
+        "title": "StonksBall FrontEnd",
+        "subheader": "26 Luglio 2023",
+        "image": "img1",
+        "alt": "image1",
+        "cardContent": "Progetto finale FrontEnd",
+        "btn": "Vedi il progetto1"
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P2",
+        "title": "StonksBall BackEnd",
+        "subheader": "27 Luglio 2023",
+        "image": "img2",
+        "alt": "image2",
+        "cardContent": "Progetto finale BackEnd",
+        "btn": "Vedi il progetto2"
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P3",
+        "title": "Linkedin Clone",
+        "subheader": "28 Aprile 2023",
+        "image": "img3",
+        "alt": "image3",
+        "cardContent": "Clone di Linkedin",
+        "btn": "Vedi il progetto3"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P4",
+        "title": "Spotify Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img4",
+        "alt": "image4",
+        "cardContent": "Clone di Spotify",
+        "btn": "Vedi il progetto4"
+      }
+    ]
+  },
   "blog": {
     "h2": "La mia esperienza",
     "data": "gen 2023 - lug 2023",

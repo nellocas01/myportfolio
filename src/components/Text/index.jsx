@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
+import "../About/style.css";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ variant, text, colors, style }) => {
+export default ({ className, variant, text, colors, style }) => {
   return (
     <Typography
+      className={className}
       variant={variant}
       sx={{ ...style, flexGrow: 1, display: "flex" }}
     >

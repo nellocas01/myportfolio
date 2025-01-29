@@ -11,6 +11,7 @@ import { useTranslation } from "react-i18next";
 import ColoredText from "../Text/index";
 import { NavbarData } from "../../mockup/index";
 import avt from "../../assets/AvatarMaker.png";
+import "./style.css";
 
 const About = () => {
   const { t } = useTranslation();
@@ -30,8 +31,9 @@ const About = () => {
       <Container sx={{ marginTop: "8rem", display: "flex" }}>
         <Box sx={{ marginRight: "7rem" }}>
           <ColoredText
+            className="text-flicker-in-glow"
             variant={"h3"}
-            text="Fullstack_Developer"
+            text="Frontend_Developer"
             colors={NavbarData.colors}
           />
           <Typography variant="body1" sx={{ marginTop: "1rem" }}>

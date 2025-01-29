@@ -1,8 +1,8 @@
 import Navbar from "../Navbar";
 import About from "../About";
 import Skills from "../Skills";
-import Contact from "../Contact";
 import Projects from "../Projects";
+import Contact from "../Contact";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -11,8 +11,8 @@ export default () => {
       <Navbar />
       <About />
       <Skills />
-      {/* <Projects />
-      <Contact /> */}
+      <Projects />
+      {/* <Contact /> */}
     </>
   );
 };

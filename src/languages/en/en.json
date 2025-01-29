@@ -25,6 +25,51 @@
     "title": "Main_Skills",
     "subtitle": "The skills, tools and technologies i use :"
   },
+  "projects": {
+    "title": "Personal_Work",
+    "array": [
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P1",
+        "title": "StonksBall FrontEnd",
+        "subheader": "July 26, 2023",
+        "image": "img1",
+        "alt": "image1",
+        "cardContent": "Capstone Project FrontEnd",
+        "btn": "Source of project1"
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P2",
+        "title": "StonksBall BackEnd",
+        "subheader": "July 27, 2023",
+        "image": "img2",
+        "alt": "image2",
+        "cardContent": "Capstone Project BackEnd",
+        "btn": "Source of project2"
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P3",
+        "title": "Linkedin Clone",
+        "subheader": "April 28, 2023",
+        "image": "img3",
+        "alt": "image3",
+        "cardContent": "Clone di Linkedin",
+        "btn": "Source of project3"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P4",
+        "title": "Spotify Clone",
+        "subheader": "March 31, 2023",
+        "image": "img4",
+        "alt": "image4",
+        "cardContent": "Clone di Spotify",
+        "btn": "Source of project4"
+      }
+    ]
+  },
   "blog": {
     "h2": "My experience",
     "data": "jan 2023 - jul 2023",
