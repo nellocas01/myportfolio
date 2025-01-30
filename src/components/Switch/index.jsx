@@ -31,9 +31,9 @@ export default function CustomizedSwitches() {
           {t("navbar.isMobile")}
         </Typography>
       )}
-      <Box sx={{ display: isMobile ? "flex" : "block" }}>
+      <Box sx={{ display: "flex" }}>
+        {/* Switch per il cambio tema */}
         <Box>
-          {/* Switch per il cambio tema */}
           <ThemeSwitch
             sx={{ m: 1 }}
             checked={isDarkMode}

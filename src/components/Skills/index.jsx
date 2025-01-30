@@ -13,6 +13,7 @@ import JavaIcon from "../../assets/javaicn.png";
 import SpringbootIcon from "../../assets/springbooticn.png";
 import GitIcon from "../../assets/giticn.png";
 import { useThemeContext } from "../../context/theme";
+import Carousel from "../Carousel";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -56,6 +57,8 @@ export default () => {
             <Avatar src={GitIcon} alt="Git" />
           </Box>
         </Box>
+        {/* Carosello */}
+        <Carousel />
       </Container>
       <Divider />
     </>

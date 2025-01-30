@@ -23,8 +23,76 @@
   },
   "cv": "Download my CV",
   "skills": {
-    "title": "Main_Skills",
-    "subtitle": "The skills, tools and technologies i use :"
+    "title": "Main_Skills_Certified",
+    "subtitle": "The skills, tools and technologies i use :",
+    "array": [
+      {
+        "image": "img1",
+        "title": "HTML5,CSS3",
+        "description": "February 3, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img2",
+        "title": "Javascript Basics,Loops",
+        "description": "February 10, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img3",
+        "title": "JavaScript II - OOP I, DOM, Events, ES6",
+        "description": "February 27, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img4",
+        "title": "HTML & CSS II - Responsiveness, CSS, Flexbox, UX/UI, Animations",
+        "description": "March 10, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img5",
+        "title": "Introduction to Frontend Frameworks: React",
+        "description": "React, Components, State Management, Component LifeCycle; April 2, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img6",
+        "title": "Advanced React for creating structured interfaces",
+        "description": "Component updates, Hooks, React Router, State lifting; April 7, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img7",
+        "title": "Advanced Frontend with TypeScript and REDUX",
+        "description": "TypeScript, Software Engineering, Redux, Reducers; April 14, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img8",
+        "title": "Introduction to Spring Boot",
+        "description": "Spring Boot, IoC & Dependecy Injection, Spring Data; June 1, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img9",
+        "title": "Advanced Spring Boot",
+        "description": "Web Services Architectures, Rest API, CRUD, Spring Security; June 9, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img10",
+        "title": "Security & Programming Best Practices",
+        "description": "Data encryption and security, Microservices Architecture, Design Patterns, Advanced Git; June 16, 2023",
+        "buttonText": "View Certificate"
+      },
+      {
+        "image": "img11",
+        "title": "FULL STACK Certificate",
+        "description": "HTML, CSS, FlexBox, JavaScript, GitHub, DOM, OOP, Bootstrap, SASS, TypeScript, Redux, Hooks, React Router, Java, SQL, JPA, JMP, SpringBoot; July 28, 2023",
+        "buttonText": "View Certificate"
+      }
+    ]
   },
   "projects": {
     "title": "Personal_Work",

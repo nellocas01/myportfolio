@@ -74,13 +74,9 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Drawer
-              anchor="right"
-              open={drawerOpen}
-              onClose={handleDrawerToggle}
-            >
-              <Box sx={{ width: 250 }}>
-                <List>
+            <Drawer anchor="top" open={drawerOpen} onClose={handleDrawerToggle}>
+              <Box sx={{ flexGrow: 1, backgroundColor: "#111722" }}>
+                <List sx={{ color: "#A5C5E9" }}>
                   {menuItems.map((item, index) => (
                     <React.Fragment key={index}>
                       <ListItem button onClick={handleDrawerToggle}>
