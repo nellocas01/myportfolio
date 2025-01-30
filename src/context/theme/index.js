@@ -14,6 +14,7 @@ export const useThemeContext = () => useContext(ThemeContext);
 export const ThemeProvider = ({ children }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
+  const isTablet = useMediaQuery(theme.breakpoints.down("lg"));
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleTheme = () => {
@@ -21,7 +22,9 @@ export const ThemeProvider = ({ children }) => {
   };
 
   return (
-    <ThemeContext.Provider value={{ isDarkMode, toggleTheme, isMobile }}>
+    <ThemeContext.Provider
+      value={{ isDarkMode, toggleTheme, isMobile, isTablet }}
+    >
       <MUIThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
         <CssBaseline />
         {children}

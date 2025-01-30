@@ -19,7 +19,7 @@ import { useThemeContext } from "../../context/theme";
 
 const Navbar = () => {
   const { t } = useTranslation();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isTablet } = useThemeContext();
 
   const [drawerOpen, setDrawerOpen] = useState(false);
 
@@ -43,13 +43,13 @@ const Navbar = () => {
       <Toolbar>
         {/* Nome a sinistra */}
         <ColoredText
-          variant={isMobile ? "h5" : "h4"}
+          variant={isMobile ? "h6" : "h4"}
           text={t("navbar.myName")}
           colors={NavbarData.colors}
         />
 
         {/* Navbar Desktop */}
-        {!isMobile ? (
+        {!isTablet ? (
           <Box sx={{ display: "flex", alignItems: "center" }}>
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>

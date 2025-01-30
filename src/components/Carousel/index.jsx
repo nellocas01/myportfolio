@@ -1,10 +1,9 @@
-import React, { useState } from "react";
 import { Box, IconButton, Stack, Slide } from "@mui/material";
 import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import CardComponent from "./card";
 import { useThemeContext } from "../../context/theme";
-import { useTranslation } from "react-i18next";
+import { useDataContext } from "../../context/useDataContext";
 // Import delle immagini
 import certificate1 from "../../assets/certificate1.png";
 import certificate2 from "../../assets/certificate2.png";
@@ -18,7 +17,7 @@ import certificate9 from "../../assets/certificate9.png";
 import certificate10 from "../../assets/certificate10.png";
 import certificate from "../../assets/certificate.png";
 
-// mappa delle immagini locali
+// Mappa delle immagini locali
 const imageMap = {
   img1: certificate1,
   img2: certificate2,
@@ -36,39 +35,25 @@ const imageMap = {
 // Funzione per ottenere l'URL corretto
 const getImageUrl = (image) => {
   if (image.startsWith("http")) {
-    return image; // Se è un URL, lo restituisce direttamente
+    return image;
   }
-  return imageMap[image] || ""; // Se è locale, cerca nella mappa
+  return imageMap[image] || "";
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  const { isMobile } = useThemeContext();
-  const { t } = useTranslation();
-  // Stato per la pagina attuale
-  const [currentPage, setCurrentPage] = useState(0);
-  const [slideDirection, setSlideDirection] = useState("left");
-  // Dati dinamici per le card
-  const cardData = t("skills.array", { returnObjects: true });
-
-  // Numero di card visibili per pagina
-  const cardsPerPage = isMobile ? 1 : 2;
-  const totalPages = Math.ceil(cardData.length / cardsPerPage);
-
-  // Funzioni per navigazione
-  const handleNextPage = () => {
-    if (currentPage < totalPages - 1) {
-      setSlideDirection("left");
-      setCurrentPage((prev) => prev + 1);
-    }
-  };
-
-  const handlePrevPage = () => {
-    if (currentPage > 0) {
-      setSlideDirection("right");
-      setCurrentPage((prev) => prev - 1);
-    }
-  };
+  const { isTablet } = useThemeContext();
+  const {
+    handlePrevPage,
+    cardsPerPage,
+    progress,
+    slideDirection,
+    totalPages,
+    currentPage,
+    cardData,
+    setIsPaused,
+    handleNextPage,
+  } = useDataContext();
 
   return (
     <Box
@@ -82,14 +67,39 @@ export default () => {
       {/* Bottone sinistro */}
       <IconButton
         onClick={handlePrevPage}
-        sx={{ margin: 2 }}
-        disabled={currentPage === 0}
+        sx={{
+          margin: 2,
+          transition: "0.3s",
+          "&:hover": { transform: "scale(1.2)", color: "primary.main" },
+        }}
       >
         <NavigateBeforeIcon />
       </IconButton>
 
       {/* Contenitore principale del carosello */}
-      <Box sx={{ width: `${cardsPerPage * 250}px`, overflow: "hidden" }}>
+      <Box
+        sx={{
+          width: !isTablet
+            ? `${cardsPerPage * 350}px`
+            : `${cardsPerPage * 250}px`,
+          overflow: "hidden",
+          display: "flex",
+          position: "relative",
+        }}
+      >
+        {/* Barra di progresso */}
+        <Box
+          sx={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            height: "4px",
+            width: `${progress}%`,
+            backgroundColor: "primary.main",
+            transition: "width linear",
+          }}
+        />
+
         <Slide direction={slideDirection} in={true} timeout={500}>
           <Stack
             direction="row"
@@ -98,7 +108,9 @@ export default () => {
               width: `${totalPages * 100}%`,
               display: "flex",
               transform: `translateX(-${currentPage * (100 / totalPages)}%)`,
-              transition: "transform 0.5s ease-in-out",
+              transition:
+                "transform 0.5s ease-in-out, opacity 0.5s ease-in-out",
+              opacity: 0.9, // Leggera dissolvenza
             }}
           >
             {/* **Mappiamo solo le card visibili nella pagina corrente** */}
@@ -108,7 +120,18 @@ export default () => {
                 currentPage * cardsPerPage + cardsPerPage
               )
               .map((card, index) => (
-                <Box key={index} sx={{ width: `${100 / cardsPerPage}%` }}>
+                <Box
+                  key={index}
+                  sx={{
+                    width: `${100 / cardsPerPage}%`,
+                    transition: "transform 0.5s ease-in-out",
+                    "&:hover": { transform: "scale(1.05)" },
+                  }}
+                  // pausa quando il mouse entra
+                  onMouseEnter={() => setIsPaused(true)}
+                  // riprendi lo scorrimento quando il mouse esce
+                  onMouseLeave={() => setIsPaused(false)}
+                >
                   <CardComponent
                     image={getImageUrl(card.image)}
                     title={card.title}
@@ -124,8 +147,11 @@ export default () => {
       {/* Bottone destro */}
       <IconButton
         onClick={handleNextPage}
-        sx={{ margin: 2 }}
-        disabled={currentPage >= totalPages - 1}
+        sx={{
+          margin: 2,
+          transition: "0.3s",
+          "&:hover": { transform: "scale(1.2)", color: "primary.main" },
+        }}
       >
         <NavigateNextIcon />
       </IconButton>

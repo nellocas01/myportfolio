@@ -31,7 +31,6 @@ export default ({ image, title, description, buttonText }) => {
           height: "320px",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
         }}
       >
         <CardMedia sx={{ height: 150 }} image={image} title={title} />
@@ -84,7 +83,7 @@ export default ({ image, title, description, buttonText }) => {
       <Dialog
         open={openImage}
         onClose={() => setOpenImage(false)}
-        maxWidth="lg"
+        maxWidth="sm"
       >
         <IconButton
           sx={{ position: "absolute", top: 10, right: 10 }}
