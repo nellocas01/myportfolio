@@ -1,7 +1,11 @@
 import { Box, Container, Divider, Typography, Avatar } from "@mui/material";
+import Grid from "@mui/material/Grid2";
 import ColoredText from "../Text/index";
 import { NavbarData } from "../../mockup";
 import { useTranslation } from "react-i18next";
+import { useThemeContext } from "../../context/theme";
+import Carousel from "../Carousel";
+// Import delle icone
 import HtmlIcon from "../../assets/htmlicn.png";
 import CssIcon from "../../assets/cssicn.png";
 import JavascriptIcon from "../../assets/javascripticn.png";
@@ -12,8 +16,36 @@ import JestIcon from "../../assets/jesticn.png";
 import JavaIcon from "../../assets/javaicn.png";
 import SpringbootIcon from "../../assets/springbooticn.png";
 import GitIcon from "../../assets/giticn.png";
-import { useThemeContext } from "../../context/theme";
-import Carousel from "../Carousel";
+import BootstrapIcon from "../../assets/bootstrapicn.png";
+import NodeIcon from "../../assets/nodeicn.png";
+import PlaywrightIcon from "../../assets/playwrighticn.png";
+import PostgresqlIcon from "../../assets/postgresqlicn.png";
+import PostmanIcon from "../../assets/postmanicn.png";
+import ReacttestinglibIcon from "../../assets/reacttestinglibicn.png";
+import SassIcon from "../../assets/sassicn.png";
+import SqlIcon from "../../assets/sqlicn.png";
+
+// Lista delle skill con immagine e nome
+const skills = [
+  { src: HtmlIcon, alt: "HTML" },
+  { src: CssIcon, alt: "CSS" },
+  { src: JavascriptIcon, alt: "JavaScript" },
+  { src: TypescriptIcon, alt: "TypeScript" },
+  { src: ReactIcon, alt: "React" },
+  { src: ReduxIcon, alt: "Redux" },
+  { src: JestIcon, alt: "Jest" },
+  { src: JavaIcon, alt: "Java" },
+  { src: SpringbootIcon, alt: "Spring Boot" },
+  { src: GitIcon, alt: "Git" },
+  { src: BootstrapIcon, alt: "Bootstrap" },
+  { src: NodeIcon, alt: "Node.js" },
+  { src: PlaywrightIcon, alt: "Playwright" },
+  { src: PostgresqlIcon, alt: "PostgreSQL" },
+  { src: PostmanIcon, alt: "Postman" },
+  { src: ReacttestinglibIcon, alt: "React Testing Library" },
+  { src: SassIcon, alt: "Sass" },
+  { src: SqlIcon, alt: "SQL" },
+];
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
@@ -33,31 +65,42 @@ export default () => {
           }}
         />
         <Typography>{t("skills.subtitle")}</Typography>
-        <Box
-          sx={{
-            marginTop: "2rem",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 2,
-          }}
+
+        {/* Griglia delle skills */}
+        <Grid
+          container
+          spacing={3}
+          justifyContent="center"
+          sx={{ marginTop: "2rem" }}
         >
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Avatar src={HtmlIcon} alt="HTML" />
-            <Avatar src={CssIcon} alt="CSS" />
-            <Avatar src={JavascriptIcon} alt="JavaScript" />
-            <Avatar src={TypescriptIcon} alt="TypeScript" />
-            <Avatar src={ReactIcon} alt="React" />
-          </Box>
-          <Box sx={{ display: "flex", gap: 2 }}>
-            <Avatar src={ReduxIcon} alt="Redux" />
-            <Avatar src={JestIcon} alt="Jest" />
-            <Avatar src={JavaIcon} alt="Java" />
-            <Avatar src={SpringbootIcon} alt="Spring Boot" />
-            <Avatar src={GitIcon} alt="Git" />
-          </Box>
-        </Box>
-        {/* Carosello */}
+          {skills.map((skill, index) => (
+            <Grid size={{ xs: 4, sm: 4, md: 3, lg: 2 }} key={index}>
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  transition: "transform 0.3s",
+                  "&:hover": { transform: "scale(1.1)" },
+                }}
+              >
+                <Avatar
+                  src={skill.src}
+                  alt={skill.alt}
+                  sx={{ width: 60, height: 60 }}
+                />
+                <Typography
+                  variant="body2"
+                  sx={{ marginTop: "0.5rem", fontSize: "0.8rem" }}
+                >
+                  {skill.alt}
+                </Typography>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+
+        {/* Carosello per le certificazioni */}
         <Carousel />
       </Container>
       <Divider />
