@@ -8,10 +8,10 @@ import {
 } from "@mui/material";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ open, handleClose }) => {
+export default ({ open, handleClose, dialog }) => {
   return (
     <Dialog open={open} onClose={handleClose}>
-      <DialogTitle>Method</DialogTitle>
+      <DialogTitle>{dialog?.title}</DialogTitle>
       <DialogContent>
         <Typography sx={{ marginBottom: 2 }}>
           Heat 1/2 cup of the broth in a pot until simmering, add saffron and

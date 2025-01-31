@@ -96,7 +96,7 @@
   },
   "projects": {
     "title": "Personal_Work",
-    "array": [
+    "cards": [
       {
         "bgAvatarColor": "#E8D2A5",
         "avatar": "P1",
@@ -105,7 +105,8 @@
         "image": "img1",
         "alt": "image1",
         "cardContent": "Capstone Project FrontEnd",
-        "btn": "Source of project1"
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git"
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -115,7 +116,8 @@
         "image": "img2",
         "alt": "image2",
         "cardContent": "Capstone Project BackEnd",
-        "btn": "Source of project2"
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git"
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -125,7 +127,8 @@
         "image": "img3",
         "alt": "image3",
         "cardContent": "Clone di Linkedin",
-        "btn": "Source of project3"
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW3.git"
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -135,7 +138,74 @@
         "image": "img4",
         "alt": "image4",
         "cardContent": "Clone di Spotify",
-        "btn": "Source of project4"
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P5",
+        "title": "Netflix Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img5",
+        "alt": "image5",
+        "cardContent": "Clone di Netflix",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P6",
+        "title": "Meteo App",
+        "subheader": "31 Marzo 2023",
+        "image": "img6",
+        "alt": "image6",
+        "cardContent": "App del meteo",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P7",
+        "title": "Calcolatrice",
+        "subheader": "31 Marzo 2023",
+        "image": "img7",
+        "alt": "image7",
+        "cardContent": "Calcolatrice",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P8",
+        "title": "Benchmark Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img8",
+        "alt": "image8",
+        "cardContent": "Clone di Benchmark",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git"
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P9",
+        "title": "Medium Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img9",
+        "alt": "image9",
+        "cardContent": "Clone di Medium",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git"
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P10",
+        "title": "Portfolio",
+        "subheader": "1 Febbraio 2025",
+        "image": "img10",
+        "alt": "image10",
+        "cardContent": "Portfolio Personale",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/myportfolio.git"
       }
     ]
   },

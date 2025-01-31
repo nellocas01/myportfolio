@@ -1,0 +1,12 @@
+/* Stile base per gli elementi delle skill */
+.skill-item {
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+/* Effetto hover */
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}

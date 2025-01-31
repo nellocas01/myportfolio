@@ -22,7 +22,7 @@ export default () => {
   const cardsPerPage = isTablet ? 1 : 2;
   const totalPages = Math.ceil(cardData.length / cardsPerPage);
 
-  const autoScrollTime = 2500; // 2.5 secondi
+  const autoScrollTime = 4000; // 4 secondi
 
   // Scorrimento automatico
   useEffect(() => {

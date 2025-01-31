@@ -5,6 +5,7 @@ import { NavbarData } from "../../mockup";
 import { useTranslation } from "react-i18next";
 import { useThemeContext } from "../../context/theme";
 import Carousel from "../Carousel";
+import "./style.css";
 // Import delle icone
 import HtmlIcon from "../../assets/htmlicn.png";
 import CssIcon from "../../assets/cssicn.png";
@@ -74,15 +75,14 @@ export default () => {
           sx={{ marginTop: "2rem" }}
         >
           {skills.map((skill, index) => (
-            <Grid size={{ xs: 4, sm: 4, md: 3, lg: 2 }} key={index}>
+            <Grid size={{ xs: 4, sm: 4, md: 3, lg: 2 }} key={skill.alt}>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  transition: "transform 0.3s",
-                  "&:hover": { transform: "scale(1.1)" },
                 }}
+                className="skill-item"
               >
                 <Avatar
                   src={skill.src}
@@ -99,7 +99,6 @@ export default () => {
             </Grid>
           ))}
         </Grid>
-
         {/* Carosello per le certificazioni */}
         <Carousel />
       </Container>

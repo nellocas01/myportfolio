@@ -36,7 +36,6 @@ const About = () => {
           display: "flex",
           flexDirection: isMobile ? "column" : "row",
           alignItems: "center",
-          textAlign: isMobile ? "center" : "left",
           gap: 2,
         }}
       >
@@ -46,6 +45,7 @@ const About = () => {
             variant={isMobile ? "h5" : "h3"}
             text="Frontend_Developer"
             colors={NavbarData.colors}
+            style={{ justifyContent: isMobile ? "center" : "start" }}
           />
           <Typography variant="body1" sx={{ marginTop: "1rem" }}>
             {t("about.text")}
@@ -60,6 +60,7 @@ const About = () => {
               width: isMobile ? 150 : 200,
               height: isMobile ? 150 : 200,
               marginTop: isMobile ? 2 : 0,
+              float: "left",
             }}
           />
         </Box>
