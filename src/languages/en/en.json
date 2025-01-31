@@ -106,7 +106,11 @@
         "alt": "image1",
         "cardContent": "Capstone Project FrontEnd",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git"
+        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git",
+        "dialog": {
+          "title": "StonksBall FrontEnd",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -117,7 +121,11 @@
         "alt": "image2",
         "cardContent": "Capstone Project BackEnd",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git"
+        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git",
+        "dialog": {
+          "title": "StonksBall BackEnd",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -126,9 +134,13 @@
         "subheader": "April 28, 2023",
         "image": "img3",
         "alt": "image3",
-        "cardContent": "Clone di Linkedin",
+        "cardContent": "Clone of Linkedin",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW3.git"
+        "repoUrl": "https://github.com/nellocas01/BW3.git",
+        "dialog": {
+          "title": "Linkedin clone",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -137,53 +149,76 @@
         "subheader": "March 31, 2023",
         "image": "img4",
         "alt": "image4",
-        "cardContent": "Clone di Spotify",
+        "cardContent": "Clone of Spotify",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git"
+        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
+        "dialog": {
+          "title": "Spotify clone",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P5",
         "title": "Netflix Clone",
-        "subheader": "31 Marzo 2023",
+        "subheader": "March 31, 2023",
         "image": "img5",
         "alt": "image5",
-        "cardContent": "Clone di Netflix",
+        "cardContent": "Clone of Netflix",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git"
+        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git",
+        "dialog": {
+          "title": "Netflix clone",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P6",
-        "title": "Meteo App",
-        "subheader": "31 Marzo 2023",
+        "title": "Weather app",
+        "subheader": "March 31, 2023",
         "image": "img6",
         "alt": "image6",
-        "cardContent": "App del meteo",
+        "cardContent": "Weather app",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git"
+        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
+        "dialog": {
+          "title": "Weather app",
+          "description": "Application to check the weather around the world! Using ReactJS and Redux. Functionality: User should be able to select city and receive weather information (will it rain?, temperature?, next days?) Utilities: Open Weather API to build personal Weather site https://openweathermap.org/api ",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P7",
-        "title": "Calcolatrice",
-        "subheader": "31 Marzo 2023",
+        "title": "Calculator",
+        "subheader": "March 31, 2023",
         "image": "img7",
         "alt": "image7",
-        "cardContent": "Calcolatrice",
+        "cardContent": "Calculator",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git"
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git",
+        "dialog": {
+          "title": "Calculator in JS",
+          "description": "The project aims to illustrate the development of a simple calculator using and integrating a series of functions that collect the value gathered from the selected field",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P8",
         "title": "Benchmark Clone",
-        "subheader": "31 Marzo 2023",
+        "subheader": "March 31, 2023",
         "image": "img8",
         "alt": "image8",
-        "cardContent": "Clone di Benchmark",
+        "cardContent": "Clone of Benchmark",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git"
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git",
+        "dialog": {
+          "title": "Benchmark clone",
+          "description": "The main macro-tasks are: Creating the QUIZ functionality using JavaScript, DOM Manipulation and Events Creating the layout (UI) with HTML, CSS, Animations. The pages are: Welcome page, Question page, Results page, Feedback page.",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -192,9 +227,14 @@
         "subheader": "31 Marzo 2023",
         "image": "img9",
         "alt": "image9",
-        "cardContent": "Clone di Medium",
+        "cardContent": "Clone of Medium",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git"
+        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
+        "dialog": {
+          "title": "Medium Clone",
+          "description": "The project involves recreating the main page of medium.com in a desktop version, as faithfully as possible, using HTML, CSS, positioning, flexbox and animation techniques. Animation is planned on the navbar changing from yellow to white and the prinicpal button from black to green. This change is to occur just before the navbar exits the hero section area, the main yellow section. Create fade-in effect using some CSS Animation techniques.",
+          "btn": "Close"
+        }
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -203,9 +243,13 @@
         "subheader": "1 Febbraio 2025",
         "image": "img10",
         "alt": "image10",
-        "cardContent": "Portfolio Personale",
+        "cardContent": "Personal Portfolio",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/myportfolio.git"
+        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
+        "dialog": {
+          "title": "Portfolio",
+          "btn": "Close"
+        }
       }
     ]
   },

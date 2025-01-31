@@ -108,7 +108,8 @@
         "btn": "GitHub Repository",
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git",
         "dialog": {
-          "title": "StonksBall FrontEnd noce"
+          "title": "StonksBall FrontEnd",
+          "btn": "Chiudi"
         }
       },
       {
@@ -120,7 +121,11 @@
         "alt": "image2",
         "cardContent": "Progetto finale BackEnd",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git"
+        "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git",
+        "dialog": {
+          "title": "StonksBall BackEnd",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -131,7 +136,11 @@
         "alt": "image3",
         "cardContent": "Clone di Linkedin",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW3.git"
+        "repoUrl": "https://github.com/nellocas01/BW3.git",
+        "dialog": {
+          "title": "Linkedin clone",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -142,7 +151,11 @@
         "alt": "image4",
         "cardContent": "Clone di Spotify",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git"
+        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
+        "dialog": {
+          "title": "Spotify clone",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -153,7 +166,11 @@
         "alt": "image5",
         "cardContent": "Clone di Netflix",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git"
+        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git",
+        "dialog": {
+          "title": "Netflix clone",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -164,7 +181,12 @@
         "alt": "image6",
         "cardContent": "App del meteo",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git"
+        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
+        "dialog": {
+          "title": "Meteo app",
+          "description": "Applicazione per controllare il meteo in giro per il mondo! Utilizzando ReactJS e Redux. Funzionalità: L'utente dovrà essere in grado di selezionare la città e ricevere le informazioni sul tempo (pioverà?, temperatura?, prossimi giorni?) Utilities: Open Weather API per costruire il sito del Meteo personale https://openweathermap.org/api",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -175,18 +197,28 @@
         "alt": "image7",
         "cardContent": "Calcolatrice",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git"
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git", 
+        "dialog": {
+          "title": "Calcolatrice in JS",
+          "description": "Il progetto ha lo scopo di illustrare lo sviluppo di una semplice calcolatrice utilizzando e integrando una serie di funzioni che raccolgono il valore raccolto dal campo selezionato",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P8",
-        "title": "Benchmark Clone",
+        "title": "Benchmark Platform",
         "subheader": "31 Marzo 2023",
         "image": "img8",
         "alt": "image8",
-        "cardContent": "Clone di Benchmark",
+        "cardContent": "Benchmark Platform",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git"
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git",
+        "dialog": {
+          "title": "Benchmark Platform",
+          "description": "I principali macro-task sono: La creazione della funzionalità QUIZ tramite JavaScript, DOM Manipulation ed Eventi Creazione del layout  (UI) con HTML, CSS, Animazioni. Le pagine sono: Welcome page, Question page, Results page, Feedback page.",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#C4D2B7",
@@ -197,7 +229,12 @@
         "alt": "image9",
         "cardContent": "Clone di Medium",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git"
+        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
+        "dialog": {
+          "title": "Clone di Medium",
+          "description": "Il progetto prevede la ricreazione della pagina principale di medium.com in versione desktop, quanto più fedelmente possibile, usando le tecniche di HTML, CSS, positioning, flexbox e animazioni. E' prevista l'animazione sulla navbar che passa da gialla a bianca e il bottone prinicpale da nero a verde. Questo cambiamento dovrà avvenire poco prima che la navbar esca dall'area della sezione hero, la sezione principale di colore giallo. Creare effetto di fade-in usando delle tecniche di CSS Animation.",
+          "btn": "Chiudi"
+        }
       },
       {
         "bgAvatarColor": "#E8D2A5",
@@ -208,7 +245,11 @@
         "alt": "image10",
         "cardContent": "Portfolio Personale",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/myportfolio.git"
+        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
+        "dialog": {
+          "title": "Portfolio",
+          "btn": "Chiudi"
+        }
       }
     ]
   },
