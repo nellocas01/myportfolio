@@ -61,7 +61,7 @@ export default () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        marginTop: "40px",
+        marginTop: 9,
       }}
     >
       {/* Bottone sinistro */}
@@ -136,6 +136,7 @@ export default () => {
                     image={getImageUrl(card.image)}
                     title={card.title}
                     description={card.description}
+                    day={card.day}
                     buttonText={card.buttonText}
                   />
                 </Box>

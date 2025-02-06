@@ -53,43 +53,50 @@
       {
         "image": "img5",
         "title": "Introduzione a Frontend Frameworks: React",
-        "description": "React, Componenti, Gestione stati, Ciclo di vita dei componenti; 2 Aprile 2023",
+        "description": "React, Componenti, Gestione stati, Ciclo di vita dei componenti",
+        "day": "2 Aprile 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img6",
         "title": "Advanced React per creazione di interfacce strutturate",
-        "description": "Aggiornamenti dei componenti, Hooks, React Router, Stato globale; 7 Aprile 2023",
+        "description": "Aggiornamenti dei componenti, Hooks, React Router, Stato globale",
+        "day": "7 Aprile 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img7",
         "title": "Frontend avanzato con TypeScript e REDUX",
-        "description": "TypeScript, Ingegneria del software, Redux, Reducers; 14 Aprile 2023",
+        "description": "TypeScript, Ingegneria del software, Redux, Reducers",
+        "day": "14 Aprile 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img8",
         "title": "Introduction to Spring Boot",
-        "description": "Spring Boot, IoC & Dependecy Injection, Spring Data; 1 Giugno 2023",
+        "description": "Spring Boot, IoC & Dependecy Injection, Spring Data",
+        "day": "1 Giugno 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img9",
         "title": "Advanced Spring Boot",
-        "description": "Architettura servizi web, Rest API, CRUD, Spring Security; 9 Giugno 2023",
+        "description": "Architettura servizi web, Rest API, CRUD, Spring Security",
+        "day": "9 Giugno 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img10",
         "title": "Security & Programming Best Practices",
-        "description": "Crittografia e sicurezza dei dati, Architettura a microservizi, Design Pattern, Git avanzato; 16 Giugno 2023",
+        "description": "Crittografia e sicurezza dei dati, Architettura a microservizi, Design Pattern, Git avanzato",
+        "day": "16 Giugno 2023",
         "buttonText": "Visualizza Certificato"
       },
       {
         "image": "img11",
         "title": "Certificato FULL STACK",
-        "description": "HTML, CSS, FlexBox, JavaScript, GitHub, DOM, OOP, Bootstrap, SASS, TypeScript, Redux, Hooks, React Router, Java, SQL, JPA, JMP, SpringBoot; 28 Luglio 2023",
+        "description": "HTML, CSS, FlexBox, JavaScript, GitHub, DOM, OOP, Bootstrap, SASS, TypeScript, Redux, Hooks, React Router, Java, SQL, JPA, JMP, SpringBoot",
+        "day": "28 Luglio 2023",
         "buttonText": "Visualizza Certificato"
       }
     ]
@@ -109,6 +116,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git",
         "dialog": {
           "title": "StonksBall FrontEnd",
+          "description": "Progetto finale FrontEnd del corso Full Stack Developer di EPICODE",
           "btn": "Chiudi"
         }
       },
@@ -124,6 +132,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git",
         "dialog": {
           "title": "StonksBall BackEnd",
+          "description": "Progetto finale BackEnd del corso Full Stack Developer di EPICODE",
           "btn": "Chiudi"
         }
       },
@@ -139,6 +148,7 @@
         "repoUrl": "https://github.com/nellocas01/BW3.git",
         "dialog": {
           "title": "Linkedin clone",
+          "description": "Implementazione frontend in stile Linkedin",
           "btn": "Chiudi"
         }
       },
@@ -154,6 +164,7 @@
         "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
         "dialog": {
           "title": "Spotify clone",
+          "description": "Implementazione frontend in stile Spotify",
           "btn": "Chiudi"
         }
       },
@@ -169,6 +180,7 @@
         "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git",
         "dialog": {
           "title": "Netflix clone",
+          "description": "Implementazione frontend in stile Netflix",
           "btn": "Chiudi"
         }
       },

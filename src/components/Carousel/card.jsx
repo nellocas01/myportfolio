@@ -15,7 +15,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default ({ image, title, description, buttonText }) => {
+export default ({ image, title, description, day, buttonText }) => {
   const [openImage, setOpenImage] = useState(false);
   const [openDescription, setOpenDescription] = useState(false);
 
@@ -53,12 +53,17 @@ export default ({ image, title, description, buttonText }) => {
 
           {/* Se la descrizione è lunga, mostra un'icona per aprirla */}
           {description.length > maxDescriptionLength ? (
-            <IconButton
-              onClick={() => setOpenDescription(true)}
-              sx={{ padding: 0 }}
-            >
-              <InfoOutlinedIcon color="primary" />
-            </IconButton>
+            <>
+              <IconButton
+                onClick={() => setOpenDescription(true)}
+                sx={{ padding: 0 }}
+              >
+                <InfoOutlinedIcon color="primary" />
+              </IconButton>
+              <Typography variant="body2" color="text.secondary" marginTop={1}>
+                {day}
+              </Typography>
+            </>
           ) : (
             <Typography variant="body2" color="text.secondary">
               {description}

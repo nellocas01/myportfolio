@@ -53,43 +53,50 @@
       {
         "image": "img5",
         "title": "Introduction to Frontend Frameworks: React",
-        "description": "React, Components, State Management, Component LifeCycle; April 2, 2023",
+        "description": "React, Components, State Management, Component LifeCycle",
+        "day": "April 2, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img6",
         "title": "Advanced React for creating structured interfaces",
-        "description": "Component updates, Hooks, React Router, State lifting; April 7, 2023",
+        "description": "Component updates, Hooks, React Router, State lifting",
+        "day": "April 7, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img7",
         "title": "Advanced Frontend with TypeScript and REDUX",
-        "description": "TypeScript, Software Engineering, Redux, Reducers; April 14, 2023",
+        "description": "TypeScript, Software Engineering, Redux, Reducers",
+        "day": "April 14, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img8",
         "title": "Introduction to Spring Boot",
-        "description": "Spring Boot, IoC & Dependecy Injection, Spring Data; June 1, 2023",
+        "description": "Spring Boot, IoC & Dependecy Injection, Spring Data",
+        "day": "June 1, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img9",
         "title": "Advanced Spring Boot",
-        "description": "Web Services Architectures, Rest API, CRUD, Spring Security; June 9, 2023",
+        "description": "Web Services Architectures, Rest API, CRUD, Spring Security",
+        "day": "June 9, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img10",
         "title": "Security & Programming Best Practices",
-        "description": "Data encryption and security, Microservices Architecture, Design Patterns, Advanced Git; June 16, 2023",
+        "description": "Data encryption and security, Microservices Architecture, Design Patterns, Advanced Git",
+        "day": "June 16, 2023",
         "buttonText": "View Certificate"
       },
       {
         "image": "img11",
         "title": "FULL STACK Certificate",
-        "description": "HTML, CSS, FlexBox, JavaScript, GitHub, DOM, OOP, Bootstrap, SASS, TypeScript, Redux, Hooks, React Router, Java, SQL, JPA, JMP, SpringBoot; July 28, 2023",
+        "description": "HTML, CSS, FlexBox, JavaScript, GitHub, DOM, OOP, Bootstrap, SASS, TypeScript, Redux, Hooks, React Router, Java, SQL, JPA, JMP, SpringBoot",
+        "day": "July 28, 2023",
         "buttonText": "View Certificate"
       }
     ]
