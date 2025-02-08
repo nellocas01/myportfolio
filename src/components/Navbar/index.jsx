@@ -12,13 +12,13 @@ import {
   Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline"; // Icona per il tour
 import { useTranslation } from "react-i18next";
 import ColoredText from "../Text";
 import { NavbarData } from "../../mockup/index";
 import CustomizedSwitches from "../Switch";
 import { useThemeContext } from "../../context/theme";
 import { useDriver } from "../../context/Driver/useDriver";
+import piloticn from "../../assets/piloticn.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -31,6 +31,11 @@ const Navbar = () => {
     setDrawerOpen(!drawerOpen);
   };
 
+  // Avvia automaticamente il tour quando la navbar viene montata
+  useEffect(() => {
+    if (!isTablet) startTour();
+  }, [startTour, isTablet]); // Assicurati che la funzione `startTour` venga passata come dipendenza
+
   const menuItems = [
     { label: t("navbar.about") },
     { label: t("navbar.skill") },
@@ -40,7 +45,6 @@ const Navbar = () => {
 
   return (
     <AppBar
-      id="navbar" // id per il tour
       position="static"
       color="transparent"
       sx={{ display: "flex", alignItems: isMobile ? "center" : "stretch" }}
@@ -71,19 +75,28 @@ const Navbar = () => {
 
             {/* Pulsante per Avviare il Tour */}
             <Button
-              startIcon={<HelpOutlineIcon />}
+              startIcon={
+                <img
+                  src={piloticn}
+                  alt="tour-icon"
+                  style={{
+                    width: 24,
+                    height: 24,
+                    transform: "scale(1.7, 1.2), translate(3.5px, 1px)",
+                  }}
+                />
+              } // Imposta l'icona PNG come immagine
               onClick={startTour}
               variant="contained"
               color="primary"
               sx={{ ml: 2 }}
-            >
-              {t("navbar.tour")} {/* Traduzione per il pulsante */}
-            </Button>
+            />
           </Box>
         ) : (
           // Navbar Mobile: Hamburger Menu
           <>
             <IconButton
+              id="drawer"
               edge="end"
               color="inherit"
               onClick={handleDrawerToggle}
@@ -105,10 +118,10 @@ const Navbar = () => {
                   <CustomizedSwitches />
 
                   {/* Pulsante per Avviare il Tour nel menu mobile */}
-                  <ListItem button onClick={startTour}>
+                  {/* <ListItem button onClick={startTour}>
                     <HelpOutlineIcon sx={{ marginRight: 1 }} />
                     <ListItemText primary={t("navbar.tour")} />
-                  </ListItem>
+                  </ListItem> */}
                 </List>
               </Box>
             </Drawer>

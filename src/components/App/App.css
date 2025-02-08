@@ -39,7 +39,7 @@
   
   
   .app_cnt {
-    /* overflow-y: auto; */
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
