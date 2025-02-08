@@ -35,6 +35,7 @@ export default function CustomizedSwitches() {
         {/* Switch per il cambio tema */}
         <Box>
           <ThemeSwitch
+            id="theme"
             sx={{ m: 1 }}
             checked={isDarkMode}
             onChange={toggleTheme}
@@ -43,6 +44,7 @@ export default function CustomizedSwitches() {
         {/* Switch per il cambio lingua */}
         <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
           <LanguageSwitch
+            id="language"
             checked={localStorage.getItem("selectedLanguage") === "it"}
             onChange={(e) => changeLanguage(e.target.checked ? "it" : "en")}
             inputProps={{ "aria-label": "Language toggle" }}

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   AppBar,
   Toolbar,
@@ -9,18 +9,22 @@ import {
   ListItem,
   ListItemText,
   Divider,
+  Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline"; // Icona per il tour
 import { useTranslation } from "react-i18next";
 import ColoredText from "../Text";
 import { NavbarData } from "../../mockup/index";
 import CustomizedSwitches from "../Switch";
 import { useThemeContext } from "../../context/theme";
+import { useDriver } from "../../context/Driver/useDriver";
 
 const Navbar = () => {
   const { t } = useTranslation();
   const { isMobile, isTablet } = useThemeContext();
-
+  const { startTour } = useDriver(); // Usa il Driver Context
+  // gestisce l'apertura del menù mobile
   const [drawerOpen, setDrawerOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -36,6 +40,7 @@ const Navbar = () => {
 
   return (
     <AppBar
+      id="navbar" // id per il tour
       position="static"
       color="transparent"
       sx={{ display: "flex", alignItems: isMobile ? "center" : "stretch" }}
@@ -43,6 +48,7 @@ const Navbar = () => {
       <Toolbar>
         {/* Nome a sinistra */}
         <ColoredText
+          id="name"
           variant={isMobile ? "h6" : "h4"}
           text={t("navbar.myName")}
           colors={NavbarData.colors}
@@ -50,7 +56,7 @@ const Navbar = () => {
 
         {/* Navbar Desktop */}
         {!isTablet ? (
-          <Box sx={{ display: "flex", alignItems: "center" }}>
+          <Box sx={{ display: "flex", alignItems: "center" }} id="sections">
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>
                 <ColoredText
@@ -62,6 +68,17 @@ const Navbar = () => {
               </React.Fragment>
             ))}
             <CustomizedSwitches />
+
+            {/* Pulsante per Avviare il Tour */}
+            <Button
+              startIcon={<HelpOutlineIcon />}
+              onClick={startTour}
+              variant="contained"
+              color="primary"
+              sx={{ ml: 2 }}
+            >
+              {t("navbar.tour")} {/* Traduzione per il pulsante */}
+            </Button>
           </Box>
         ) : (
           // Navbar Mobile: Hamburger Menu
@@ -86,6 +103,12 @@ const Navbar = () => {
                     </React.Fragment>
                   ))}
                   <CustomizedSwitches />
+
+                  {/* Pulsante per Avviare il Tour nel menu mobile */}
+                  <ListItem button onClick={startTour}>
+                    <HelpOutlineIcon sx={{ marginRight: 1 }} />
+                    <ListItemText primary={t("navbar.tour")} />
+                  </ListItem>
                 </List>
               </Box>
             </Drawer>
