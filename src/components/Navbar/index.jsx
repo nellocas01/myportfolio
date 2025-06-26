@@ -34,7 +34,7 @@ const Navbar = () => {
   // Avvia automaticamente il tour quando la navbar viene montata
   useEffect(() => {
     if (!isTablet) startTour();
-  }, [startTour, isTablet]); // Assicurati che la funzione `startTour` venga passata come dipendenza
+  }, [isTablet]);
 
   const menuItems = [
     { label: t("navbar.about") },
