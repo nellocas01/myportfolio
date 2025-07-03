@@ -45,7 +45,7 @@ const getImageUrl = (image) => {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isDarkMode } = useThemeContext();
   const projects = t("projects.cards", { returnObjects: true });
   // hook per controllare lo scroll manualmente
   const carouselRef = useRef(null);
@@ -73,7 +73,7 @@ export default () => {
         <ColoredText
           variant={isMobile ? "h5" : "h4"}
           text={t("projects.title")}
-          colors={NavbarData.colors}
+          colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
           style={{
             marginBottom: 1,
             justifyContent: isMobile ? "center" : "start",

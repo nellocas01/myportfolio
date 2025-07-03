@@ -21,7 +21,7 @@ const Footer = () => {
   const { setIsLoading, setError, loading } = useAppContext();
   const theme = useTheme();
   const formRef = useRef();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isDarkMode } = useThemeContext();
   const [status, setStatus] = useState(null);
 
   const sendEmail = async (e) => {
@@ -62,7 +62,7 @@ const Footer = () => {
         <ColoredText
           variant={isMobile ? "h5" : "h4"}
           text={"Contatti"}
-          colors={NavbarData.colors}
+          colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
           style={{
             marginBottom: 5,
             justifyContent: isMobile ? "center" : "start",

@@ -16,7 +16,7 @@ import { useThemeContext } from "../../context/theme";
 
 const About = () => {
   const { t } = useTranslation();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isDarkMode } = useThemeContext();
 
   const onButtonClick = () => {
     const link = document.createElement("a");
@@ -44,7 +44,7 @@ const About = () => {
             className="text-flicker-in-glow"
             variant={isMobile ? "h5" : "h3"}
             text="Frontend_Developer"
-            colors={NavbarData.colors}
+            colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
             style={{ justifyContent: isMobile ? "center" : "start" }}
           />
           <Typography variant="body1" sx={{ marginY: "1rem" }}>

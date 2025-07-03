@@ -22,7 +22,7 @@ import imgSipliFleet from "../../assets/SipliFleet.png";
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isDarkMode } = useThemeContext();
   const works = t("works", { returnObjects: true });
 
   const logos = {
@@ -36,7 +36,7 @@ export default () => {
         <ColoredText
           variant={isMobile ? "h5" : "h4"}
           text={t("works.title")}
-          colors={NavbarData.colors}
+          colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
           style={{
             marginBottom: 1,
             justifyContent: isMobile ? "center" : "end",

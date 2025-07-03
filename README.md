@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# 👨‍💻 Portfolio Personale – Aniello Casolla
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Questo progetto è il mio portfolio personale sviluppato con **React**, pensato per presentare le mie esperienze, competenze tecniche e progetti, il tutto con una UI moderna, responsive e multilingua.
 
-## Available Scripts
+L’obiettivo è quello di offrire una panoramica professionale del mio profilo, includendo un sistema dinamico di navigazione, animazioni introduttive, sezione contatti con invio email e dettagli su esperienze passate, utilizzando le più comuni best practice frontend.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🎯 Obiettivi del progetto
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Presentare esperienze lavorative e progetti personali in modo ordinato, elegante e responsive.
+- Offrire un’interfaccia dinamica con navigazione fluida tra le sezioni.
+- Implementare **dark/light mode** gestita tramite `MUI` e contesto globale.
+- Permettere il **download diretto del CV** e la sua visualizzazione in un’altra scheda.
+- Includere un **form di contatto** collegato a **EmailJS** per l’invio diretto di email.
+- Integrare un **tour interattivo** tramite `Driver.js` per guidare l’utente tra le funzionalità.
+- Gestire più lingue (IT/EN) grazie a `i18next`.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## ✅ Funzionalità implementate
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Navbar responsive con **menu drawer mobile**.
+- Animazioni introduttive e **testo colorato dinamico**.
+- Sezione esperienze strutturata come `Accordion` stile LinkedIn.
+- Presentazione progetti tecnici tramite descrizioni sintetiche e dettagliate.
+- **Switch dark/light mode** integrato nel tema MUI.
+- Download e apertura del CV `.pdf`.
+- Form contatto funzionante via EmailJS con gestione dello stato (`loading`, `success`, `error`).
+- Integrazione del **tour guidato** all’apertura del sito.
+- Struttura multilingua tramite `react-i18next`.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠️ Tecnologie utilizzate
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React** (18.x)
+- **Material UI (MUI)** per componenti e theming
+- **Driver.js** per il tour interattivo
+- **EmailJS** per invio email frontend
+- **i18next / react-i18next** per localizzazione
+- **React Context** per gestione tema e stati globali
+- **Responsive design** via MUI + media queries
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 📁 Struttura del progetto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+/src
+├── /assets # immagini, avatar, PDF CV
+├── /components # componenti riutilizzabili (Navbar, Footer, etc.)
+├── /context # ThemeContext, DriverContext, AppContext
+├── /customhooks # Per gestire la logica dei rendering component
+├── /languages # Gestione multilingua con i118
+├── App.jsx
+└── index.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌐 Responsività
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Il progetto è ottimizzato per:
 
-## Learn More
+- ✅ Desktop
+- ✅ Tablet
+- ✅ Mobile
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Utilizza `MUI` e media queries per garantire un layout fluido su ogni dispositivo.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🔧 Come eseguire il progetto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clona il repository:
 
-### Analyzing the Bundle Size
+```bash
+git clone https://github.com/aniellocasolla/portfolio.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+2. Installa le dipendenze:
+```bash
+npm install
+```
 
-### Making a Progressive Web App
+3. Avvia il progetto:
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Apri http://localhost:3000 nel browser.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 Come modificare il contenuto
+Le esperienze e progetti sono definite in /languages/it.json.
 
-### Deployment
+Il CV PDF va posizionato in /public/ per permettere sia il download che la visualizzazione diretta.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 👨‍💻 Autore
+**Aniello Casolla**
+📧 nellocasolla446@gmail.com
+📆 Ultimo aggiornamento: Luglio 2025
 
-### `npm run build` fails to minify
+## 📌 Note
+Progetto sviluppato per dimostrare capacità di:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Strutturazione architettura frontend in React
+
+Gestione UI moderna e responsive
+
+Integrazione API e automazioni
+
+Multilingua, accessibilità, tema e buone pratiche
+

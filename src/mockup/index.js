@@ -14,4 +14,14 @@ export const NavbarData = {
     "#A5E0E8",
     "#A5DDE8",
   ],
+  colorsLight: [
+    "#204060", // blue navy
+    "#406080", // blue-grigio
+    "#408080", // teal medio
+    "#60A080", // verde salvia
+    "#80A060", // oliva desaturato
+    "#A08060", // sabbia caldo
+    "#C06040", // terra rossa
+    "#A04060", // bordeaux desaturato
+  ],
 };

@@ -22,7 +22,7 @@ import piloticn from "../../assets/piloticn.png";
 
 const Navbar = () => {
   const { t } = useTranslation();
-  const { isMobile, isTablet } = useThemeContext();
+  const { isMobile, isTablet, isDarkMode } = useThemeContext();
   const { startTour } = useDriver(); // Usa il Driver Context
   // gestisce l'apertura del menù mobile
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -56,7 +56,7 @@ const Navbar = () => {
           id="name"
           variant={isMobile ? "h6" : "h4"}
           text={t("navbar.myName")}
-          colors={NavbarData.colors}
+          colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
         />
 
         {/* Navbar Desktop */}
@@ -67,7 +67,9 @@ const Navbar = () => {
                 <ColoredText
                   variant="h6"
                   text={item.label}
-                  colors={NavbarData.colors}
+                  colors={
+                    isDarkMode ? NavbarData.colors : NavbarData.colorsLight
+                  }
                   style={{ cursor: "pointer" }}
                   onClick={() => {
                     const section = document.getElementById(item.anchor);
@@ -115,14 +117,14 @@ const Navbar = () => {
             <Drawer anchor="top" open={drawerOpen} onClose={handleDrawerToggle}>
               <Box sx={{ flexGrow: 1, backgroundColor: "#111722" }}>
                 <List sx={{ color: "#A5C5E9" }}>
-                  {menuItems.map((item, index) => (
+                  {/* {menuItems.map((item, index) => (
                     <React.Fragment key={index}>
                       <ListItem button onClick={handleDrawerToggle}>
                         <ListItemText primary={item.label} />
                       </ListItem>
                       {index < menuItems.length - 1 && <Divider />}
                     </React.Fragment>
-                  ))}
+                  ))} */}
                   <CustomizedSwitches />
 
                   {/* Pulsante per Avviare il Tour nel menu mobile */}

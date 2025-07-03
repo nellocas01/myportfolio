@@ -51,18 +51,15 @@ const skills = [
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
-  const { isMobile } = useThemeContext();
+  const { isMobile, isDarkMode } = useThemeContext();
 
   return (
     <>
-      <Container
-        id="skill"
-        sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}
-      >
+      <Container id="skill" sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}>
         <ColoredText
           variant={isMobile ? "h5" : "h4"}
           text={t("skills.title")}
-          colors={NavbarData.colors}
+          colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
           style={{
             justifyContent: isMobile ? "center" : "end",
             marginBottom: "1rem",
