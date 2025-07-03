@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Box, Container, IconButton } from "@mui/material";
+import { Box, Container, Divider, IconButton } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import ColoredText from "../Text/index";
 import { NavbarData } from "../../mockup/index";
@@ -65,17 +65,21 @@ export default () => {
   };
 
   return (
-    <Container sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}>
-      <ColoredText
-        variant={isMobile ? "h5" : "h4"}
-        text={t("projects.title")}
-        colors={NavbarData.colors}
-        style={{
-          marginBottom: 1,
-          justifyContent: isMobile ? "center" : "start",
-        }}
-      />
-      {/* <Box
+    <>
+      <Container
+        id="projects"
+        sx={{ marginY: "5rem", padding: isMobile ? 0 : 1 }}
+      >
+        <ColoredText
+          variant={isMobile ? "h5" : "h4"}
+          text={t("projects.title")}
+          colors={NavbarData.colors}
+          style={{
+            marginBottom: 1,
+            justifyContent: isMobile ? "center" : "start",
+          }}
+        />
+        {/* <Box
         sx={{
           display: "grid",
           justifyContent: "center",
@@ -103,75 +107,77 @@ export default () => {
         ))}
       </Box> */}
 
-      {/* Contenitore del carosello */}
-      <Box
-        sx={{
-          position: "relative",
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          mt: 5,
-        }}
-      >
-        {/* Pulsante Sinistra */}
-        <IconButton
-          onClick={scrollLeft}
-          sx={{
-            position: "absolute",
-            left: 0,
-            zIndex: 2,
-            boxShadow: 1,
-          }}
-        >
-          <NavigateBeforeIcon />
-        </IconButton>
-
-        {/* Scroller delle Cards */}
+        {/* Contenitore del carosello */}
         <Box
-          ref={carouselRef}
           sx={{
+            position: "relative",
+            width: "100%",
             display: "flex",
-            overflowX: "hidden",
-            scrollBehavior: "smooth",
-            gap: 2,
-            width: "80%",
-            mx: "auto",
-            "&::-webkit-scrollbar": { display: "none" }, // Nasconde la scrollbar
+            alignItems: "center",
+            mt: 5,
           }}
         >
-          {projects.map((project, index) => (
-            <Box key={index} sx={{ flex: "0 0 300px" }}>
-              {" "}
-              {/* Card con larghezza fissa */}
-              <Cards
-                bgAvatarColor={project.bgAvatarColor}
-                avatar={project.avatar}
-                title={project.title}
-                subheader={project.subheader}
-                image={getImageUrl(project.image)}
-                alt={project.alt}
-                cardContent={project.cardContent}
-                btn={project.btn}
-                repoUrl={project.repoUrl}
-                dialog={project.dialog}
-              />
-            </Box>
-          ))}
-        </Box>
+          {/* Pulsante Sinistra */}
+          <IconButton
+            onClick={scrollLeft}
+            sx={{
+              position: "absolute",
+              left: 0,
+              zIndex: 2,
+              boxShadow: 1,
+            }}
+          >
+            <NavigateBeforeIcon />
+          </IconButton>
 
-        {/* Pulsante Destra */}
-        <IconButton
-          onClick={scrollRight}
-          sx={{
-            position: "absolute",
-            right: 0,
-            zIndex: 2,
-            boxShadow: 1,
-          }}
-        >
-          <NavigateNextIcon />
-        </IconButton>
-      </Box>
-    </Container>
+          {/* Scroller delle Cards */}
+          <Box
+            ref={carouselRef}
+            sx={{
+              display: "flex",
+              overflowX: "hidden",
+              scrollBehavior: "smooth",
+              gap: 2,
+              width: "80%",
+              mx: "auto",
+              "&::-webkit-scrollbar": { display: "none" }, // Nasconde la scrollbar
+            }}
+          >
+            {projects.map((project, index) => (
+              <Box key={index} sx={{ flex: "0 0 300px" }}>
+                {" "}
+                {/* Card con larghezza fissa */}
+                <Cards
+                  bgAvatarColor={project.bgAvatarColor}
+                  avatar={project.avatar}
+                  title={project.title}
+                  subheader={project.subheader}
+                  image={getImageUrl(project.image)}
+                  alt={project.alt}
+                  cardContent={project.cardContent}
+                  btn={project.btn}
+                  repoUrl={project.repoUrl}
+                  dialog={project.dialog}
+                />
+              </Box>
+            ))}
+          </Box>
+
+          {/* Pulsante Destra */}
+          <IconButton
+            onClick={scrollRight}
+            sx={{
+              position: "absolute",
+              right: 0,
+              zIndex: 2,
+              boxShadow: 1,
+            }}
+          >
+            <NavigateNextIcon />
+          </IconButton>
+        </Box>
+      </Container>
+      <Divider />
+    </>
   );
 };

@@ -19,10 +19,9 @@ const About = () => {
   const { isMobile } = useThemeContext();
 
   const onButtonClick = () => {
-    const pdfUrl = "/assets/Casolla-Aniello-CV.pdf";
     const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "Casolla-Aniello-CV.pdf"; // specify the filename
+    link.href = "/CasollaAnielloCV.pdf";
+    link.download = "CasollaAnielloCV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -31,6 +30,7 @@ const About = () => {
   return (
     <>
       <Container
+        id="about"
         sx={{
           marginTop: "8rem",
           display: "flex",
@@ -47,9 +47,18 @@ const About = () => {
             colors={NavbarData.colors}
             style={{ justifyContent: isMobile ? "center" : "start" }}
           />
-          <Typography variant="body1" sx={{ marginTop: "1rem" }}>
+          <Typography variant="body1" sx={{ marginY: "1rem" }}>
             {t("about.text")}
           </Typography>
+          <Button
+            href="/CasollaAnielloCV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            sx={{ mr: 2 }}
+          >
+            {t("viewCV")}
+          </Button>
           <Button onClick={onButtonClick}>{t("cv")}</Button>
         </Box>
         <Box>

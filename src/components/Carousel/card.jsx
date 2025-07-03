@@ -31,6 +31,7 @@ export default ({ image, title, description, day, buttonText }) => {
           height: "320px",
           display: "flex",
           flexDirection: "column",
+          backgroundColor: "transparent",
         }}
       >
         <CardMedia sx={{ height: 150 }} image={image} title={title} />

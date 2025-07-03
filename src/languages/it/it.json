@@ -4,6 +4,7 @@
     "about": "Su_di_me",
     "skill": "Abilità",
     "projects": "Progetti_personali",
+    "works": "Esperienze_Lavorative",
     "contacts": "Contatti",
     "isMobile": "Personalizza la schermata :",
     "colors": [
@@ -21,6 +22,7 @@
     "title": "Chi sono",
     "text": "Sono uno sviluppatore Full-Stack con solide basi di programmazione, ma sempre in fase di studio e aggiornamento per migliorare le mie competenze ogni giorno. Dopo aver completato un master intensivo che mi ha permesso di acquisire la maggior parte delle mie conoscenze, le sto applicando quotidianamente grazie alla mia prima esperienza lavorativa in questo campo, dove cerco di migliorare le mie attuali competenze, ma anche di svilupparne continuamente di nuove. Mi considero un'ottima lavoratrice, in quanto sono anche completamente disponibile al lavoro di squadra. Sono una persona perspicace, anche di fronte alle difficoltà cerco di superarle al meglio, se c'è una sfida non mi sottraggo."
   },
+  "viewCV": "Visualizza il mio CV",
   "cv": "Scarica il mio CV",
   "skills": {
     "title": "Competenze_Principali_Certificate",
@@ -209,7 +211,7 @@
         "alt": "image7",
         "cardContent": "Calcolatrice",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git", 
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git",
         "dialog": {
           "title": "Calcolatrice in JS",
           "description": "Il progetto ha lo scopo di illustrare lo sviluppo di una semplice calcolatrice utilizzando e integrando una serie di funzioni che raccolgono il valore raccolto dal campo selezionato",
@@ -262,6 +264,87 @@
           "title": "Portfolio",
           "btn": "Chiudi"
         }
+      }
+    ]
+  },
+  "works": {
+    "title": "Esperienze_Lavorative",
+    "subtitle": "Le mie esperienze lavorative :",
+    "cards": [
+      {
+        "company": "SiaCloud for Retail",
+        "role": "Frontend Developer",
+        "period": "mag 2024 - ott 2025",
+        "duration": "17 mesi",
+        "location": "Casalnuovo di Napoli, Campania, Italia · In sede",
+        "cardContent": [
+          "Sviluppato un sistema di gestione configurazioni per clienti e articoli, con focus su documentazione (JSDoc) e testing (Jest, React Testing Library, Playwright).",
+          "Creato componenti reattivi e gestito lo stato globale utilizzando TypeScript e React.",
+          "Progettato un sistema di reportistica per il reparto tecnico, ottimizzando documentazione e testing.",
+          "Implementato flussi di lavoro avanzati per il reparto assistenza, migliorandone l'efficienza.",
+          "Sviluppato strumenti per l'analisi delle attività amministrative con visualizzazioni basate su criteri specifici.",
+          "Gestito in autonomia lo sviluppo di applicazioni su larga scala.",
+          "Versionato e gestito il codice sorgente con TortoiseSVN.",
+          "Utilizzato principalmente React e MUI, implementando componenti custom, integrando API e seguendo i principali paradigmi della libreria.",
+          "Refactor completo di un'applicazione legacy scritta interamente in un unico file `App.js`. Il codice è stato suddiviso in folder per area funzionale, con creazione di componenti riutilizzabili, hook personalizzati e introduzione di contesto globale per gestione di errori e caricamenti.",
+          "Sviluppo di una web app per il riepilogo delle attività di fatturazione cliente, avviata tramite link dinamico contenente dati di inizializzazione. Inclusa gestione di descrizioni lunghe con visualizzazione completa tramite modale.",
+          "Creazione di un'applicazione per la gestione e l'invio di ticket da parte degli utenti finali, integrata con flussi di supporto tecnico e visualizzazione dei ticket in tempo reale.",
+          "Progettazione e sviluppo di una piattaforma per la gestione della fidelizzazione clienti. L'app consente a catene di brand di gestire campagne e scegliere tra diversi marchi all'avvio, visualizzando premi e vantaggi in base alla spesa.",
+          "Costruzione di una libreria di componenti condivisi con React e Storybook. Include componenti logici e visuali, documentati e riutilizzabili, pensati come base per tutti i progetti futuri.",
+          "Realizzazione di un'applicazione PHP/React per la gestione di etichette e traduzioni. Lo script backend elabora file, estrae etichette `LBL_*`, e popola un database relazionale. Interfaccia React + Vite con riepilogo, modifica e gestione multilingua.",
+          "Sviluppo di un’applicazione React + Vite + TypeScript per il monitoraggio e controllo dei dispositivi connessi. Include funzioni per connettere/disconnettere, avviare/spegnere e aggiungere dispositivi, con gestione in tempo reale.",
+          "Automazione della gestione di report in JSReport tramite script Node.js: recupero da server remoto, confronto con cartelle locali, rinomina con shortid, ed estrazione automatica di file `it.json` per generare un report JSON centralizzato.",
+          "Redazione di tre documenti guida sull'importanza e l'utilizzo pratico di: testing (Jest, RTL), documentazione (JSDoc) e Typescript nelle applicazioni React."
+        ],
+        "skills": [
+          "Node JS",
+          "TypeScript",
+          "React",
+          "MUI",
+          "Testing",
+          "Jest",
+          "React Testing Library",
+          "Playwright",
+          "Documentazione",
+          "JSdoc",
+          "TSdoc",
+          "TypeDoc",
+          "TortoiseSVN",
+          "StoryBook",
+          "JSreport",
+          "Architettura a microservizi",
+          "Business Logic",
+          "React Query Builder",
+          "PHP"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgSiacloud"
+      },
+      {
+        "company": "Sipli Fleet",
+        "role": "Full-stack Developer",
+        "period": "ott 2023 - mag 2024",
+        "duration": "8 mesi",
+        "location": "Casalnuovo di Napoli, Campania, Italia · In sede",
+        "cardContent": [
+          "Utilizzo di React con componenti MUI e custom",
+          "Chiamate API con Axios",
+          "Backend in Java + Spring Boot (microservizi REST)",
+          "PostgreSQL per la persistenza dati",
+          "Python per automazioni"
+        ],
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React",
+          "Redux",
+          "MUI",
+          "Java",
+          "Spring Boot"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgSipliFleet"
       }
     ]
   },

@@ -4,6 +4,7 @@
     "about": "About_me",
     "skill": "Skill",
     "projects": "My_projects",
+    "works": "Work_Experience",
     "contacts": "Contacts",
     "isMobile": "Customize the screen :",
     "colors": [
@@ -21,6 +22,7 @@
     "title": "Who I am",
     "text": "I am a Full-Stack Developer with a solid foundation in programming, but always studying and updating to improve my skills every day. After having completed an intensive master's degree that enabled me to acquire most of my knowledge, I am now embarking on my first work experience in this field, where I try to improve my current skills, but also develop new ones. I consider myself an excellent worker, as I am also completely available for team-working. I am a perceptive person, even when faced with difficulties I try to overcome them as best I can, if there is a challenge I do not shy away from it."
   },
+  "viewCV": "View my CV",
   "cv": "Download my CV",
   "skills": {
     "title": "Main_Skills_Certified",
@@ -257,6 +259,87 @@
           "title": "Portfolio",
           "btn": "Close"
         }
+      }
+    ]
+  },
+  "works": {
+    "title": "Work_Experience",
+    "subtitle": "My work experience :",
+    "cards": [
+      {
+        "company": "SiaCloud for Retail",
+        "role": "Frontend Developer",
+        "period": "may 2024 - oct 2025",
+        "duration": "17 months",
+        "location": "Casalnuovo of Naples, Campania, Italy · On site",
+        "cardContent": [
+          "Developed a configuration management system for customers and items, with focus on documentation (JSDoc) and testing (Jest, React Testing Library, Playwright).",
+          "Created responsive components and managed global state using TypeScript and React.",
+          "Designed a reporting system for the technical department, optimizing documentation and testing.",
+          "Implemented advanced workflows for the service department, improving its efficiency. ",
+          "Developed tools for analyzing administrative tasks with visualizations based on specific criteria.",
+          "Independently managed large-scale application development.",
+          "Versioned and managed source code with TortoiseSVN.",
+          "Primarily used React and MUI, implementing custom components, integrating APIs, and following the main library paradigms.",
+          "Complete refactor of a legacy application written entirely in a single `App.js` file. Code was divided into folders by functional area, with creation of reusable components, custom hooks and introduction of global context for error and load handling.",
+          "Development of a web app for summarizing customer billing activities, initiated via dynamic link containing initialization data. Including management of long descriptions with full visualization via modal.",
+          "Creation of an app for end-user ticket management and submission, integrated with technical support flows and real-time ticket visualization.",
+          "Design and development of a customer loyalty management platform. The app allows brand chains to manage campaigns and choose from different brands at startup, displaying rewards and benefits based on spend.",
+          "Construction of a shared component library with React and Storybook. Includes logical and visual components, documented and reusable, designed as a basis for all future projects.",
+          "Building a PHP/React application for label and translation management. Backend script processes files, extracts `LBL_*` labels, and populates a relational database. React + Screw interface with summarization, editing, and multilingual management.",
+          "Development of a React + Screw + TypeScript application for monitoring and controlling connected devices. Includes functions to connect/disconnect, start/stop and add devices, with real-time management.",
+          "Automation of report management in JSReport using Node.js scripts: retrieval from remote server, comparison with local folders, renaming with shortid, and automatic extraction of `it.json` files to generate a centralized JSON report.",
+          "Drafting of three guidance documents on the importance and practical use of: testing (Jest, RTL), documentation (JSDoc) and Typescript in React applications."
+        ],
+        "skills": [
+          "Node JS",
+          "TypeScript",
+          "React",
+          "MUI",
+          "Testing",
+          "Jest",
+          "React Testing Library",
+          "Playwright",
+          "Documentazione",
+          "JSdoc",
+          "TSdoc",
+          "TypeDoc",
+          "TortoiseSVN",
+          "StoryBook",
+          "JSreport",
+          "Microservices Architecture",
+          "Business Logic",
+          "React Query Builder",
+          "PHP"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgSiacloud"
+      },
+      {
+        "company": "Sipli Fleet",
+        "role": "Full-stack Developer",
+        "period": "oct 2023 - may 2024",
+        "duration": "8 months",
+        "location": "Casalnuovo of Naples, Campania, Italy · On site",
+        "cardContent": [
+          "Using React with MUI and custom components",
+          "API calls with Axios",
+          "Backend in Java + Spring Boot (REST microservices)",
+          "PostgreSQL for data persistence",
+          "Python for automations"
+        ],
+        "skills": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React",
+          "Redux",
+          "MUI",
+          "Java",
+          "Spring Boot"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgSipliFleet"
       }
     ]
   },

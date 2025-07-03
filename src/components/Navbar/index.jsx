@@ -37,10 +37,11 @@ const Navbar = () => {
   }, [isTablet]);
 
   const menuItems = [
-    { label: t("navbar.about") },
-    { label: t("navbar.skill") },
-    { label: t("navbar.projects") },
-    { label: t("navbar.contacts") },
+    { label: t("navbar.about"), anchor: "about" },
+    { label: t("navbar.skill"), anchor: "skill" },
+    { label: t("navbar.projects"), anchor: "projects" },
+    { label: t("navbar.works"), anchor: "works" },
+    { label: t("navbar.contacts"), anchor: "contacts" },
   ];
 
   return (
@@ -67,6 +68,13 @@ const Navbar = () => {
                   variant="h6"
                   text={item.label}
                   colors={NavbarData.colors}
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    const section = document.getElementById(item.anchor);
+                    if (section) {
+                      section.scrollIntoView({ behavior: "smooth" });
+                    }
+                  }}
                 />
                 {index < menuItems.length - 1 && <Divider sx={{ mx: 1 }} />}
               </React.Fragment>
