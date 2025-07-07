@@ -25,6 +25,7 @@ import PostmanIcon from "../../assets/postmanicn.png";
 import ReacttestinglibIcon from "../../assets/reacttestinglibicn.png";
 import SassIcon from "../../assets/sassicn.png";
 import SqlIcon from "../../assets/sqlicn.png";
+import MuiIcon from "../../assets/muiicn.png";
 
 // Lista delle skill con immagine e nome
 const skills = [
@@ -38,6 +39,7 @@ const skills = [
   { src: JavaIcon, alt: "Java" },
   { src: SpringbootIcon, alt: "Spring Boot" },
   { src: GitIcon, alt: "Git" },
+  { src: MuiIcon, alt: "Material UI" },
   { src: BootstrapIcon, alt: "Bootstrap" },
   { src: NodeIcon, alt: "Node.js" },
   { src: PlaywrightIcon, alt: "Playwright" },

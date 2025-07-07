@@ -9,15 +9,15 @@ import NavigateBeforeIcon from "@mui/icons-material/NavigateBefore";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 // Import manuale delle immagini
-import soccerballicn from "../../assets/soccerball.png";
-import soccerballbwicn from "../../assets/soccerballbw.png";
-import linkedinIcn from "../../assets/linkedinicn.png";
-import spotifyicn from "../../assets/spotifyicn.png";
-import netflixicn from "../../assets/netflixicn.png";
-import meteoicn from "../../assets/meteoicn.png";
-import calcolatriceicn from "../../assets/calcolatriceicn.png";
-import benchmarkicn from "../../assets/benchmarkicn.png";
-import mediumicn from "../../assets/mediumicn.png";
+import soccerballicn from "../../assets/capstonePageFE.jpg";
+import soccerballbwicn from "../../assets/capstonePageBE.jpg";
+import linkedinIcn from "../../assets/linkedinPage.jpg";
+import spotifyicn from "../../assets/spotifyPage.jpg";
+import netflixicn from "../../assets/netflixPage.jpg";
+import meteoicn from "../../assets/meteoPage.png";
+import calcolatriceicn from "../../assets/calculatorPage.png";
+import benchmarkicn from "../../assets/benchmarkPage.png";
+import mediumicn from "../../assets/mediumPage.png";
 import avataricn from "../../assets/AvatarMaker.png";
 
 // Mappa delle immagini locali dei progetti

@@ -7,7 +7,7 @@ import { LanguageSwitch } from "./language";
 
 export default function CustomizedSwitches() {
   // stato che gestisce il tema
-  const { isDarkMode, toggleTheme, isMobile } = useThemeContext();
+  const { isDarkMode, toggleTheme, isTablet } = useThemeContext();
   // stato che gestisce il cambio lingua
   const { i18n, t } = useTranslation();
 
@@ -26,7 +26,7 @@ export default function CustomizedSwitches() {
 
   return (
     <>
-      {isMobile && (
+      {isTablet && (
         <Typography sx={{ marginTop: 4, paddingLeft: 1 }}>
           {t("navbar.isMobile")}
         </Typography>

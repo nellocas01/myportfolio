@@ -5,6 +5,7 @@
     "skill": "Skill",
     "projects": "My_projects",
     "works": "Work_Experience",
+    "education": "Education",
     "contacts": "Contacts",
     "isMobile": "Customize the screen :",
     "colors": [
@@ -108,6 +109,114 @@
     "cards": [
       {
         "bgAvatarColor": "#E8D2A5",
+        "avatar": "P10",
+        "title": "Portfolio",
+        "subheader": "1 Febbraio 2025",
+        "image": "img10",
+        "alt": "image10",
+        "cardContent": "Personal Portfolio",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
+        "dialog": {
+          "title": "Portfolio",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P3",
+        "title": "Linkedin Clone",
+        "subheader": "April 28, 2023",
+        "image": "img3",
+        "alt": "image3",
+        "cardContent": "Clone of Linkedin",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW3.git",
+        "dialog": {
+          "title": "Linkedin clone",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P6",
+        "title": "Weather app",
+        "subheader": "March 31, 2023",
+        "image": "img6",
+        "alt": "image6",
+        "cardContent": "Weather app",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
+        "dialog": {
+          "title": "Weather app",
+          "description": "Application to check the weather around the world! Using ReactJS and Redux. Functionality: User should be able to select city and receive weather information (will it rain?, temperature?, next days?) Utilities: Open Weather API to build personal Weather site https://openweathermap.org/api ",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P5",
+        "title": "Netflix Clone",
+        "subheader": "March 31, 2023",
+        "image": "img5",
+        "alt": "image5",
+        "cardContent": "Clone of Netflix",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/netflix-clone",
+        "dialog": {
+          "title": "Netflix clone",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P4",
+        "title": "Spotify Clone",
+        "subheader": "March 31, 2023",
+        "image": "img4",
+        "alt": "image4",
+        "cardContent": "Clone of Spotify",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
+        "dialog": {
+          "title": "Spotify clone",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P8",
+        "title": "Benchmark Clone",
+        "subheader": "March 31, 2023",
+        "image": "img8",
+        "alt": "image8",
+        "cardContent": "Clone of Benchmark",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/tree/master/m1/build-week-1-branch-gruppo4",
+        "dialog": {
+          "title": "Benchmark clone",
+          "description": "The main macro-tasks are: Creating the QUIZ functionality using JavaScript, DOM Manipulation and Events Creating the layout (UI) with HTML, CSS, Animations. The pages are: Welcome page, Question page, Results page, Feedback page.",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P9",
+        "title": "Medium Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img9",
+        "alt": "image9",
+        "cardContent": "Clone of Medium",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
+        "dialog": {
+          "title": "Medium Clone",
+          "description": "The project involves recreating the main page of medium.com in a desktop version, as faithfully as possible, using HTML, CSS, positioning, flexbox and animation techniques. Animation is planned on the navbar changing from yellow to white and the prinicpal button from black to green. This change is to occur just before the navbar exits the hero section area, the main yellow section. Create fade-in effect using some CSS Animation techniques.",
+          "btn": "Close"
+        }
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
         "avatar": "P1",
         "title": "StonksBall FrontEnd",
         "subheader": "July 26, 2023",
@@ -137,67 +246,6 @@
         }
       },
       {
-        "bgAvatarColor": "#E8D2A5",
-        "avatar": "P3",
-        "title": "Linkedin Clone",
-        "subheader": "April 28, 2023",
-        "image": "img3",
-        "alt": "image3",
-        "cardContent": "Clone of Linkedin",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW3.git",
-        "dialog": {
-          "title": "Linkedin clone",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P4",
-        "title": "Spotify Clone",
-        "subheader": "March 31, 2023",
-        "image": "img4",
-        "alt": "image4",
-        "cardContent": "Clone of Spotify",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
-        "dialog": {
-          "title": "Spotify clone",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P5",
-        "title": "Netflix Clone",
-        "subheader": "March 31, 2023",
-        "image": "img5",
-        "alt": "image5",
-        "cardContent": "Clone of Netflix",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git",
-        "dialog": {
-          "title": "Netflix clone",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P6",
-        "title": "Weather app",
-        "subheader": "March 31, 2023",
-        "image": "img6",
-        "alt": "image6",
-        "cardContent": "Weather app",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
-        "dialog": {
-          "title": "Weather app",
-          "description": "Application to check the weather around the world! Using ReactJS and Redux. Functionality: User should be able to select city and receive weather information (will it rain?, temperature?, next days?) Utilities: Open Weather API to build personal Weather site https://openweathermap.org/api ",
-          "btn": "Close"
-        }
-      },
-      {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P7",
         "title": "Calculator",
@@ -206,57 +254,10 @@
         "alt": "image7",
         "cardContent": "Calculator",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/tree/master/m1/s2/g5",
         "dialog": {
           "title": "Calculator in JS",
           "description": "The project aims to illustrate the development of a simple calculator using and integrating a series of functions that collect the value gathered from the selected field",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P8",
-        "title": "Benchmark Clone",
-        "subheader": "March 31, 2023",
-        "image": "img8",
-        "alt": "image8",
-        "cardContent": "Clone of Benchmark",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git",
-        "dialog": {
-          "title": "Benchmark clone",
-          "description": "The main macro-tasks are: Creating the QUIZ functionality using JavaScript, DOM Manipulation and Events Creating the layout (UI) with HTML, CSS, Animations. The pages are: Welcome page, Question page, Results page, Feedback page.",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P9",
-        "title": "Medium Clone",
-        "subheader": "31 Marzo 2023",
-        "image": "img9",
-        "alt": "image9",
-        "cardContent": "Clone of Medium",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
-        "dialog": {
-          "title": "Medium Clone",
-          "description": "The project involves recreating the main page of medium.com in a desktop version, as faithfully as possible, using HTML, CSS, positioning, flexbox and animation techniques. Animation is planned on the navbar changing from yellow to white and the prinicpal button from black to green. This change is to occur just before the navbar exits the hero section area, the main yellow section. Create fade-in effect using some CSS Animation techniques.",
-          "btn": "Close"
-        }
-      },
-      {
-        "bgAvatarColor": "#E8D2A5",
-        "avatar": "P10",
-        "title": "Portfolio",
-        "subheader": "1 Febbraio 2025",
-        "image": "img10",
-        "alt": "image10",
-        "cardContent": "Personal Portfolio",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
-        "dialog": {
-          "title": "Portfolio",
           "btn": "Close"
         }
       }
@@ -343,14 +344,70 @@
       }
     ]
   },
-  "blog": {
-    "h2": "My experience",
-    "data": "jan 2023 - jul 2023",
-    "tecn": "Technologies: ",
-    "h6": "DS1 Level 1 Postgraduate Diploma in Science of Economics and Business Management,",
-    "h66": "Business administration and management",
-    "data2": "sep 2015 - jun 2020",
-    "voto": "Voting"
+  "education": {
+    "title": "Education",
+    "subtitle": "My educational backgrounds :",
+    "cards": [
+      {
+        "school": "EPICODE Institute of Technology",
+        "degree": "Web Development - Full Stack Developer",
+        "period": "jan 2023 - jul 2023",
+        "duration": "6 months",
+        "location": "remote",
+        "cardContent": [
+          "Intensive BootCamp for the Full-Stack Web Developer course lasting 6 months, totaling 950 training hours, divided into theory and daily hands-on projects, which were carried out both individually and in group work.",
+          "Frontend: HTML, CSS, JavaScript, Bootstrap, SASS, TypeScript.",
+          "Backend: Java, Hibernate, Spring/Spring Boot",
+          "Database: PostgreSQL"
+        ],
+        "skills": [
+          "HTML5",
+          "CSS",
+          "Node.js",
+          "JavaScript",
+          "TypeScript",
+          "Sviluppo Web",
+          "Bootstrap",
+          "React",
+          "SASS",
+          "Java",
+          "SpringBoot",
+          "Sviluppo Web back-end",
+          "PostgreSQL",
+          "Lavoro di squadra",
+          "Postman",
+          "Linux",
+          "Windows"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgEpicode",
+        "certificate": "certificateEpicode",
+        "certificateLink": "https://www.linkedin.com/in/casolla-aniello/overlay/1635537618896/single-media-viewer/?profileId=ACoAADFjAbgBv5acriVRyh_8NXjQox-xSWRYUy8"
+      },
+      {
+        "school": "ITC ENRICO CARUSO",
+        "degree": "Administration, Finance and Marketing",
+        "period": "sep 2015 - jun 2020",
+        "duration": "5 years",
+        "location": "Naples, Italy",
+        "vote": "76/100",
+        "cardContent": [
+          "DS1 Level 1 Postgraduate Diploma in Economics and Business Management, Business Administration and Management, General"
+        ],
+        "skills": [
+          "Computer Science",
+          "English",
+          "Political Economy",
+          "Microsoft Windows",
+          "Law",
+          "Business Administration"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgCaruso",
+        "certificate": "certificateDiploma",
+        "certificateLink": "https://www.linkedin.com/in/casolla-aniello/overlay/1635537618940/single-media-viewer/?profileId=ACoAADFjAbgBv5acriVRyh_8NXjQox-xSWRYUy8"
+      }
+    ]
   },
   "home": {
     "h4": "Naples, Campania, Italy",

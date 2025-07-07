@@ -5,6 +5,7 @@
     "skill": "Abilità",
     "projects": "Progetti_personali",
     "works": "Esperienze_Lavorative",
+    "education": "Formazione",
     "contacts": "Contatti",
     "isMobile": "Personalizza la schermata :",
     "colors": [
@@ -20,7 +21,7 @@
   },
   "about": {
     "title": "Chi sono",
-    "text": "Sono uno sviluppatore Full-Stack con solide basi di programmazione, ma sempre in fase di studio e aggiornamento per migliorare le mie competenze ogni giorno. Dopo aver completato un master intensivo che mi ha permesso di acquisire la maggior parte delle mie conoscenze, le sto applicando quotidianamente grazie alla mia prima esperienza lavorativa in questo campo, dove cerco di migliorare le mie attuali competenze, ma anche di svilupparne continuamente di nuove. Mi considero un'ottima lavoratrice, in quanto sono anche completamente disponibile al lavoro di squadra. Sono una persona perspicace, anche di fronte alle difficoltà cerco di superarle al meglio, se c'è una sfida non mi sottraggo."
+    "text": "Sono uno sviluppatore Full-Stack con solide basi di programmazione, ma sempre in fase di studio e aggiornamento per migliorare le mie competenze ogni giorno. Dopo aver completato un master intensivo che mi ha permesso di acquisire la maggior parte delle mie conoscenze, le sto applicando quotidianamente grazie alla mia prima esperienza lavorativa in questo campo, dove cerco di migliorare le mie attuali competenze, ma anche di svilupparne continuamente di nuove. Mi considero un ottimo lavoratore, in quanto sono anche completamente disponibile al lavoro di squadra. Sono una persona perspicace, anche di fronte alle difficoltà cerco di superarle al meglio, se c'è una sfida non mi sottraggo."
   },
   "viewCV": "Visualizza il mio CV",
   "cv": "Scarica il mio CV",
@@ -108,6 +109,117 @@
     "cards": [
       {
         "bgAvatarColor": "#E8D2A5",
+        "avatar": "P10",
+        "title": "Portfolio",
+        "subheader": "1 Febbraio 2025",
+        "image": "img10",
+        "alt": "image10",
+        "cardContent": "Portfolio Personale",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
+        "dialog": {
+          "title": "Portfolio",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
+        "avatar": "P3",
+        "title": "Linkedin Clone",
+        "subheader": "28 Aprile 2023",
+        "image": "img3",
+        "alt": "image3",
+        "cardContent": "Clone di Linkedin",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW3.git",
+        "dialog": {
+          "title": "Linkedin clone",
+          "description": "Implementazione frontend in stile Linkedin",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P6",
+        "title": "Meteo App",
+        "subheader": "31 Marzo 2023",
+        "image": "img6",
+        "alt": "image6",
+        "cardContent": "App del meteo",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
+        "dialog": {
+          "title": "Meteo app",
+          "description": "Applicazione per controllare il meteo in giro per il mondo! Utilizzando ReactJS e Redux. Funzionalità: L'utente dovrà essere in grado di selezionare la città e ricevere le informazioni sul tempo (pioverà?, temperatura?, prossimi giorni?) Utilities: Open Weather API per costruire il sito del Meteo personale https://openweathermap.org/api",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P5",
+        "title": "Netflix Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img5",
+        "alt": "image5",
+        "cardContent": "Clone di Netflix",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/netflix-clone",
+        "dialog": {
+          "title": "Netflix clone",
+          "description": "Implementazione frontend in stile Netflix",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P4",
+        "title": "Spotify Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img4",
+        "alt": "image4",
+        "cardContent": "Clone di Spotify",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
+        "dialog": {
+          "title": "Spotify clone",
+          "description": "Implementazione frontend in stile Spotify",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P8",
+        "title": "Benchmark Platform",
+        "subheader": "31 Marzo 2023",
+        "image": "img8",
+        "alt": "image8",
+        "cardContent": "Benchmark Platform",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/tree/master/m1/build-week-1-branch-gruppo4",
+        "dialog": {
+          "title": "Benchmark Platform",
+          "description": "I principali macro-task sono: La creazione della funzionalità QUIZ tramite JavaScript, DOM Manipulation ed Eventi Creazione del layout  (UI) con HTML, CSS, Animazioni. Le pagine sono: Welcome page, Question page, Results page, Feedback page.",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#C4D2B7",
+        "avatar": "P9",
+        "title": "Medium Clone",
+        "subheader": "31 Marzo 2023",
+        "image": "img9",
+        "alt": "image9",
+        "cardContent": "Clone di Medium",
+        "btn": "GitHub Repository",
+        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
+        "dialog": {
+          "title": "Clone di Medium",
+          "description": "Il progetto prevede la ricreazione della pagina principale di medium.com in versione desktop, quanto più fedelmente possibile, usando le tecniche di HTML, CSS, positioning, flexbox e animazioni. E' prevista l'animazione sulla navbar che passa da gialla a bianca e il bottone prinicpale da nero a verde. Questo cambiamento dovrà avvenire poco prima che la navbar esca dall'area della sezione hero, la sezione principale di colore giallo. Creare effetto di fade-in usando delle tecniche di CSS Animation.",
+          "btn": "Chiudi"
+        }
+      },
+      {
+        "bgAvatarColor": "#E8D2A5",
         "avatar": "P1",
         "title": "StonksBall FrontEnd",
         "subheader": "26 Luglio 2023",
@@ -139,70 +251,6 @@
         }
       },
       {
-        "bgAvatarColor": "#E8D2A5",
-        "avatar": "P3",
-        "title": "Linkedin Clone",
-        "subheader": "28 Aprile 2023",
-        "image": "img3",
-        "alt": "image3",
-        "cardContent": "Clone di Linkedin",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW3.git",
-        "dialog": {
-          "title": "Linkedin clone",
-          "description": "Implementazione frontend in stile Linkedin",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P4",
-        "title": "Spotify Clone",
-        "subheader": "31 Marzo 2023",
-        "image": "img4",
-        "alt": "image4",
-        "cardContent": "Clone di Spotify",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
-        "dialog": {
-          "title": "Spotify clone",
-          "description": "Implementazione frontend in stile Spotify",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P5",
-        "title": "Netflix Clone",
-        "subheader": "31 Marzo 2023",
-        "image": "img5",
-        "alt": "image5",
-        "cardContent": "Clone di Netflix",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D5-Casolla-Aniello-FS0123.git",
-        "dialog": {
-          "title": "Netflix clone",
-          "description": "Implementazione frontend in stile Netflix",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P6",
-        "title": "Meteo App",
-        "subheader": "31 Marzo 2023",
-        "image": "img6",
-        "alt": "image6",
-        "cardContent": "App del meteo",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U3-D10-Progetto-Aniello-Casolla-FS0123.git",
-        "dialog": {
-          "title": "Meteo app",
-          "description": "Applicazione per controllare il meteo in giro per il mondo! Utilizzando ReactJS e Redux. Funzionalità: L'utente dovrà essere in grado di selezionare la città e ricevere le informazioni sul tempo (pioverà?, temperatura?, prossimi giorni?) Utilities: Open Weather API per costruire il sito del Meteo personale https://openweathermap.org/api",
-          "btn": "Chiudi"
-        }
-      },
-      {
         "bgAvatarColor": "#C4D2B7",
         "avatar": "P7",
         "title": "Calcolatrice",
@@ -211,57 +259,10 @@
         "alt": "image7",
         "cardContent": "Calcolatrice",
         "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello.git",
+        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/tree/master/m1/s2/g5",
         "dialog": {
           "title": "Calcolatrice in JS",
           "description": "Il progetto ha lo scopo di illustrare lo sviluppo di una semplice calcolatrice utilizzando e integrando una serie di funzioni che raccolgono il valore raccolto dal campo selezionato",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P8",
-        "title": "Benchmark Platform",
-        "subheader": "31 Marzo 2023",
-        "image": "img8",
-        "alt": "image8",
-        "cardContent": "Benchmark Platform",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U1-fs0123-Casolla-Aniello/m1/build-week-1-branch-gruppo4.git",
-        "dialog": {
-          "title": "Benchmark Platform",
-          "description": "I principali macro-task sono: La creazione della funzionalità QUIZ tramite JavaScript, DOM Manipulation ed Eventi Creazione del layout  (UI) con HTML, CSS, Animazioni. Le pagine sono: Welcome page, Question page, Results page, Feedback page.",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#C4D2B7",
-        "avatar": "P9",
-        "title": "Medium Clone",
-        "subheader": "31 Marzo 2023",
-        "image": "img9",
-        "alt": "image9",
-        "cardContent": "Clone di Medium",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/U2-D5-FS0123-Casolla-Aniello.git",
-        "dialog": {
-          "title": "Clone di Medium",
-          "description": "Il progetto prevede la ricreazione della pagina principale di medium.com in versione desktop, quanto più fedelmente possibile, usando le tecniche di HTML, CSS, positioning, flexbox e animazioni. E' prevista l'animazione sulla navbar che passa da gialla a bianca e il bottone prinicpale da nero a verde. Questo cambiamento dovrà avvenire poco prima che la navbar esca dall'area della sezione hero, la sezione principale di colore giallo. Creare effetto di fade-in usando delle tecniche di CSS Animation.",
-          "btn": "Chiudi"
-        }
-      },
-      {
-        "bgAvatarColor": "#E8D2A5",
-        "avatar": "P10",
-        "title": "Portfolio",
-        "subheader": "1 Febbraio 2025",
-        "image": "img10",
-        "alt": "image10",
-        "cardContent": "Portfolio Personale",
-        "btn": "GitHub Repository",
-        "repoUrl": "https://github.com/nellocas01/myportfolio.git",
-        "dialog": {
-          "title": "Portfolio",
           "btn": "Chiudi"
         }
       }
@@ -348,14 +349,70 @@
       }
     ]
   },
-  "blog": {
-    "h2": "La mia esperienza",
-    "data": "gen 2023 - lug 2023",
-    "tecn": "Tecnologie: ",
-    "h6": "Diploma di Specializzazione di 1° livello DS1 in Scienze dell'Economia e della Gestione Aziendale,",
-    "h66": "Amministrazione e gestione aziendale",
-    "data2": "set 2015 - giu 2020",
-    "voto": "Votazione"
+  "education": {
+    "title": "Formazione",
+    "subtitle": "I miei percorsi formativi :",
+    "cards": [
+      {
+        "school": "EPICODE Institute of Technology",
+        "degree": "Web Development - Full Stack Developer",
+        "period": "gen 2023 - lug 2023",
+        "duration": "6 mesi",
+        "location": "remoto",
+        "cardContent": [
+          "BootCamp intensivo per il corso Full-Stack Web Developer della durata di 6 mesi, per un totale di 950 ore formative, divise in teoria e progetti pratici quotidiani, i quali svolti sia in maniera individuale, sia in lavori di gruppo.",
+          "Frontend: HTML, CSS, JavaScript, Bootstrap, SASS, TypeScript.",
+          "Backend: Java, Hibernate, Spring/Spring Boot",
+          "Database: PostgreSQL"
+        ],
+        "skills": [
+          "HTML5",
+          "CSS",
+          "Node.js",
+          "JavaScript",
+          "TypeScript",
+          "Sviluppo Web",
+          "Bootstrap",
+          "React",
+          "SASS",
+          "Java",
+          "SpringBoot",
+          "Sviluppo Web back-end",
+          "PostgreSQL",
+          "Lavoro di squadra",
+          "Postman",
+          "Linux",
+          "Windows"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgEpicode",
+        "certificate": "certificateEpicode",
+        "certificateLink": "https://www.linkedin.com/in/casolla-aniello/overlay/1635537618896/single-media-viewer/?profileId=ACoAADFjAbgBv5acriVRyh_8NXjQox-xSWRYUy8"
+      },
+      {
+        "school": "ITC ENRICO CARUSO",
+        "degree": "Amministrazione, Finanza e Marketing",
+        "period": "set 2015 - giu 2020",
+        "duration": "5 anni",
+        "location": "Napoli, NA",
+        "vote": "76/100",
+        "cardContent": [
+          "Diploma di Specializzazione di 1° livello DS1 in Scienze dell'Economia e della Gestione Aziendale, Amministrazione e gestione aziendale, generale"
+        ],
+        "skills": [
+          "Informatica",
+          "Inglese",
+          "Economia politica",
+          "Microsoft Windows",
+          "Diritto",
+          "Economia aziendale"
+        ],
+        "linkedin": "https://www.linkedin.com/in/casolla-aniello/",
+        "logo": "imgCaruso",
+        "certificate": "certificateDiploma",
+        "certificateLink": "https://www.linkedin.com/in/casolla-aniello/overlay/1635537618940/single-media-viewer/?profileId=ACoAADFjAbgBv5acriVRyh_8NXjQox-xSWRYUy8"
+      }
+    ]
   },
   "home": {
     "h4": "Napoli, Campania, Italia",

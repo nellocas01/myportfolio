@@ -41,6 +41,7 @@ const Navbar = () => {
     { label: t("navbar.skill"), anchor: "skill" },
     { label: t("navbar.projects"), anchor: "projects" },
     { label: t("navbar.works"), anchor: "works" },
+    { label: t("navbar.education"), anchor: "education" },
     { label: t("navbar.contacts"), anchor: "contacts" },
   ];
 
