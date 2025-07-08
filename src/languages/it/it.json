@@ -420,6 +420,14 @@
     "subtitle": "I miei articoli :",
     "cards": [
       {
+        "image": "imgStonksball",
+        "alt": "imageStonksball",
+        "title": "Spiegazione Capstone Project Epicode",
+        "subheader": "Luglio 2023",
+        "link": "https://www.youtube.com/watch?v=o3i7UwoHcNc",
+        "btn": "Visualizza video"
+      },
+      {
         "image": "imgTest",
         "alt": "imageTest",
         "title": "Guida per testare applicazioni React",

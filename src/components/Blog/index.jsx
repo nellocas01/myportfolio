@@ -14,9 +14,11 @@ import { useThemeContext } from "../../context/theme";
 import imgTest from "../../assets/testingImg.jpg";
 import imgDoc from "../../assets/documentImg.png";
 import imgTS from "../../assets/typescriptImg.jpg";
+import imgStonksball from "../../assets/capstonePageFE.jpg";
 
 // Mappa delle immagini locali degli articoli
 const imageMap = {
+  imgStonksball: imgStonksball,
   imgTest: imgTest,
   imgDoc: imgDoc,
   imgTS: imgTS,
@@ -52,9 +54,12 @@ export default () => {
           sx={{
             marginTop: 3,
             display: "flex",
-            justifyContent: isTablet ? "start" : "center",
-            gap: isTablet ? 2 : 5,
-            overflowX: isTablet ? "auto" : "hidden",
+            // justifyContent: isTablet ? "start" : "center",
+            justifyContent: "start",
+            // gap: isTablet ? 2 : 5,
+            gap: 2,
+            // overflowX: isTablet ? "auto" : "hidden",
+            overflowX: "auto",
           }}
         >
           {blogs.cards.map((blog, index) => (

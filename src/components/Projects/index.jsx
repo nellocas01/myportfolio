@@ -45,7 +45,7 @@ const getImageUrl = (image) => {
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
   const { t } = useTranslation();
-  const { isMobile, isDarkMode } = useThemeContext();
+  const { isMobile, isDarkMode, isTablet } = useThemeContext();
   const projects = t("projects.cards", { returnObjects: true });
   // hook per controllare lo scroll manualmente
   const carouselRef = useRef(null);
@@ -115,6 +115,17 @@ export default () => {
             display: "flex",
             alignItems: "center",
             mt: 5,
+            overflowX: isMobile ? "auto" : "visible",
+            paddingX: isMobile ? 1 : 0,
+            scrollSnapType: isMobile ? "x mandatory" : "none",
+            WebkitOverflowScrolling: "touch", // per iOS
+            "&::-webkit-scrollbar": {
+              height: "6px",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#ccc",
+              borderRadius: "10px",
+            },
           }}
         >
           {/* Pulsante Sinistra */}
@@ -125,6 +136,7 @@ export default () => {
               left: 0,
               zIndex: 2,
               boxShadow: 1,
+              display: isMobile ? "none" : "block",
             }}
           >
             <NavigateBeforeIcon />
@@ -135,16 +147,28 @@ export default () => {
             ref={carouselRef}
             sx={{
               display: "flex",
-              overflowX: "hidden",
-              scrollBehavior: "smooth",
               gap: 2,
-              width: "80%",
-              mx: "auto",
-              "&::-webkit-scrollbar": { display: "none" }, // Nasconde la scrollbar
+              overflowX: isMobile ? "auto" : "hidden",
+              width: "100%",
+              scrollSnapType: isMobile ? "x mandatory" : "none",
+              paddingX: isMobile ? 1 : 0,
+              scrollBehavior: "smooth",
+              "&::-webkit-scrollbar": { height: "6px" },
+              "&::-webkit-scrollbar-thumb": {
+                backgroundColor: "#888",
+                borderRadius: 10,
+              },
             }}
           >
             {projects.map((project, index) => (
-              <Box key={index} sx={{ flex: "0 0 300px" }}>
+              <Box
+                key={index}
+                sx={{
+                  flex: "0 0 300px",
+                  minWidth: "300px",
+                  scrollSnapAlign: isMobile ? "start" : "none",
+                }}
+              >
                 {" "}
                 {/* Card con larghezza fissa */}
                 <Cards
@@ -171,6 +195,7 @@ export default () => {
               right: 0,
               zIndex: 2,
               boxShadow: 1,
+              display: isMobile ? "none" : "block",
             }}
           >
             <NavigateNextIcon />
