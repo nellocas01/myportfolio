@@ -6,6 +6,7 @@
     "projects": "My_projects",
     "works": "Work_Experience",
     "education": "Education",
+    "blog": "Blog",
     "contacts": "Contacts",
     "isMobile": "Customize the screen :",
     "colors": [
@@ -406,6 +407,36 @@
         "logo": "imgCaruso",
         "certificate": "certificateDiploma",
         "certificateLink": "https://www.linkedin.com/in/casolla-aniello/overlay/1635537618940/single-media-viewer/?profileId=ACoAADFjAbgBv5acriVRyh_8NXjQox-xSWRYUy8"
+      }
+    ]
+  },
+  "blogs": {
+    "title": "Blog",
+    "subtitle": "My blogs :",
+    "cards": [
+      {
+        "image": "imgTest",
+        "alt": "imageTest",
+        "title": "Guide to testing React applications",
+        "subheader": "July 2025",
+        "link": "/GuideToTestingReactApplication.pdf",
+        "btn": "View article"
+      },
+      {
+        "image": "imgDoc",
+        "alt": "imageDoc",
+        "title": "Guide to document React applications",
+        "subheader": "July 2025",
+        "link": "/GuideToDocumentReactApplication.pdf",
+        "btn": "View article"
+      },
+      {
+        "image": "imgTS",
+        "alt": "imageTypeScript",
+        "title": "Guide to TypeScript",
+        "subheader": "July 2025",
+        "link": "/GuideTypescript.pdf",
+        "btn": "View article"
       }
     ]
   },

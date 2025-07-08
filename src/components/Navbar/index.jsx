@@ -42,6 +42,7 @@ const Navbar = () => {
     { label: t("navbar.projects"), anchor: "projects" },
     { label: t("navbar.works"), anchor: "works" },
     { label: t("navbar.education"), anchor: "education" },
+    { label: t("navbar.blog"), anchor: "blog" },
     { label: t("navbar.contacts"), anchor: "contacts" },
   ];
 
@@ -66,7 +67,7 @@ const Navbar = () => {
             {menuItems.map((item, index) => (
               <React.Fragment key={index}>
                 <ColoredText
-                  variant="h6"
+                  variant="subtitle2"
                   text={item.label}
                   colors={
                     isDarkMode ? NavbarData.colors : NavbarData.colorsLight
