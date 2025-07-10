@@ -1,4 +1,18 @@
 {
+  "tour": {
+    "progressText": "Step {{current}} of {{total}}",
+    "doneBtn": "Done",
+    "nextBtn": "Next",
+    "prevBtn": "Previous",
+    "languageTitle": "Language",
+    "languageDescription": "Choose your preferred language",
+    "nameTitle": "Name",
+    "nameDescription": "Hi, my name is ",
+    "sectionsTitle": "Sections",
+    "sectionsDescription": "Explore the portfolio sections",
+    "themeTitle": "Theme",
+    "themeDescription": "Choose your preferred theme"
+  },
   "navbar": {
     "myName": "Aniello_Casolla",
     "about": "About_me",

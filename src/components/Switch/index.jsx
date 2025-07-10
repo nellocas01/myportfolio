@@ -4,10 +4,12 @@ import { useThemeContext } from "../../context/theme";
 import { useTranslation } from "react-i18next";
 import { ThemeSwitch } from "./theme";
 import { LanguageSwitch } from "./language";
+import { useDriver } from "../../context/Driver/useDriver";
 
 export default function CustomizedSwitches() {
   // stato che gestisce il tema
   const { isDarkMode, toggleTheme, isTablet } = useThemeContext();
+  const { initializeDriver } = useDriver(); // Usa il Driver Context
   // stato che gestisce il cambio lingua
   const { i18n, t } = useTranslation();
 
@@ -15,6 +17,11 @@ export default function CustomizedSwitches() {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
     localStorage.setItem("selectedLanguage", lng);
+
+    // Ricrea e riavvia il tour
+    setTimeout(() => {
+      initializeDriver().drive(); // reinizializza con i nuovi step
+    }, 300);
   };
 
   useEffect(() => {

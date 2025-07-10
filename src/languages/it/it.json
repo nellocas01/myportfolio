@@ -1,4 +1,18 @@
 {
+  "tour": {
+    "progressText": "Passo {{current}} di {{total}}",
+    "doneBtn": "Fatto",
+    "nextBtn": "Avanti",
+    "prevBtn": "Indietro",
+    "languageTitle": "Lingua",
+    "languageDescription": "Scegli la tua lingua preferita",
+    "nameTitle": "Nome",
+    "nameDescription": "Ciao, mi chiamo ",
+    "sectionsTitle": "Sezioni",
+    "sectionsDescription": "Esplora le sezioni del portfolio",
+    "themeTitle": "Tema",
+    "themeDescription": "Scegli il tema preferito"
+  },
   "navbar": {
     "myName": "Casolla_Aniello",
     "about": "Su_di_me",

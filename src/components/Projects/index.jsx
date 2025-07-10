@@ -132,6 +132,7 @@ export default () => {
           <IconButton
             onClick={scrollLeft}
             sx={{
+              backgroundColor: "grey",
               position: "absolute",
               left: 0,
               zIndex: 2,
@@ -191,6 +192,7 @@ export default () => {
           <IconButton
             onClick={scrollRight}
             sx={{
+              backgroundColor: "grey",
               position: "absolute",
               right: 0,
               zIndex: 2,

@@ -1,56 +1,41 @@
-import { createContext, useContext, useState, useEffect } from "react";
+import { createContext, useState, useEffect } from "react";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
-import { useThemeContext } from "../theme";
+import { useTranslation } from "react-i18next";
 
 const DriverContext = createContext();
 
 export const DriverProvider = ({ children }) => {
-  const { isMobile, isTablet } = useThemeContext();
-
+  const { t } = useTranslation();
   const [driverInstance, setDriverInstance] = useState(null);
 
-  // Passi del tour con personalizzazione
-  const steps = [
+  // step dinamici a seconda della lingua scelta
+  const getSteps = () => [
+    {
+      element: "#language",
+      popover: {
+        description: t("tour.languageDescription"),
+      },
+    },
     {
       element: "#name",
       popover: {
-        description: "Ciao, mi chiamo ",
+        description: t("tour.nameDescription"),
       },
     },
     {
       element: "#sections",
-      popover: { description: "Le sezioni del portfolio" },
+      popover: {
+        description: t("tour.sectionsDescription"),
+      },
     },
     {
       element: "#theme",
       popover: {
-        description: "Scegli il tema",
+        description: t("tour.themeDescription"),
       },
     },
-    {
-      element: "#language",
-      popover: {
-        description: "Imposta la lingua",
-      },
-    },
-    // {
-    //   element: "#drawer",
-    //   popover: {
-    //     description: "Visualizza la navbar",
-    //   },
-    // },
   ];
-
-  // // Filtro i passi per escludere alcuni quando è mobile
-  // const filteredSteps = isMobile
-  //   ? steps.filter(
-  //       (step) =>
-  //         step.element !== "#sections" &&
-  //         step.element !== "#theme" &&
-  //         step.element !== "#language"
-  //     )
-  //   : steps.filter((step) => step.element !== "#drawer");
 
   // Inizializzazione del driver
   const initializeDriver = () => {
@@ -60,9 +45,12 @@ export const DriverProvider = ({ children }) => {
       highlightColor: "#FF5733", // Colore del bordo evidenziato dell'elemento selezionato
       allowClose: true, // Permetti la chiusura manuale del tour
       showProgress: true, // Mostra il progresso
-      progressText: "Passo {{current}} di {{total}}", // Testo per il progresso
+      doneBtnText: t("tour.doneBtn"),
+      nextBtnText: t("tour.nextBtn"),
+      prevBtnText: t("tour.prevBtn"),
+      progressText: t("tour.progressText"), // Testo per il progresso
       stagePadding: 10, // Padding per ogni step
-      steps: steps, // Usa i passi filtrati
+      steps: getSteps(), // Usa i passi dinamici
     });
     setDriverInstance(newDriver);
     return newDriver;
@@ -71,6 +59,7 @@ export const DriverProvider = ({ children }) => {
   useEffect(() => {
     // Inizializza l'istanza di Driver.js quando il contesto viene montato
     initializeDriver();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // L'array di dipendenze vuoto indica che l'effetto viene eseguito solo una volta
 
   // Funzione per avviare il tour
@@ -83,7 +72,7 @@ export const DriverProvider = ({ children }) => {
   };
 
   return (
-    <DriverContext.Provider value={{ startTour }}>
+    <DriverContext.Provider value={{ startTour, initializeDriver }}>
       {children}
     </DriverContext.Provider>
   );
