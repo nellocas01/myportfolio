@@ -13,12 +13,15 @@ const resources = {
   },
 };
 
+// Recupera lingua dal localStorage, se esiste
+const savedLanguage = localStorage.getItem("selectedLanguage");
+
 // Configura i18next
 i18n
   .use(initReactI18next) // Passa i18next a react-i18next
   .init({
     resources,
-    lng: "it", // Lingua di default
+    lng: savedLanguage || "it", // Lingua di default
     fallbackLng: "en", // Lingua di fallback
 
     interpolation: {

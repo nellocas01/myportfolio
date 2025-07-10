@@ -2,40 +2,54 @@ import { createContext, useState, useEffect } from "react";
 import { driver } from "driver.js";
 import "driver.js/dist/driver.css";
 import { useTranslation } from "react-i18next";
+import { useThemeContext } from "../theme";
 
 const DriverContext = createContext();
 
 export const DriverProvider = ({ children }) => {
   const { t } = useTranslation();
+  const { isTablet } = useThemeContext();
   const [driverInstance, setDriverInstance] = useState(null);
 
   // step dinamici a seconda della lingua scelta
-  const getSteps = () => [
-    {
-      element: "#language",
-      popover: {
-        description: t("tour.languageDescription"),
+  const getSteps = () => {
+    const allSteps = [
+      {
+        element: "#language",
+        popover: {
+          description: t("tour.languageDescription"),
+        },
       },
-    },
-    {
-      element: "#name",
-      popover: {
-        description: t("tour.nameDescription"),
+      {
+        element: "#name",
+        popover: {
+          description: t("tour.nameDescription"),
+        },
       },
-    },
-    {
-      element: "#sections",
-      popover: {
-        description: t("tour.sectionsDescription"),
+      {
+        element: "#sections",
+        popover: {
+          description: t("tour.sectionsDescription"),
+        },
       },
-    },
-    {
-      element: "#theme",
-      popover: {
-        description: t("tour.themeDescription"),
+      {
+        element: "#theme",
+        popover: {
+          description: t("tour.themeDescription"),
+        },
       },
-    },
-  ];
+    ];
+
+    if (isTablet) {
+      // Mobile: solo language e theme
+      return allSteps.filter(
+        (step) => step.element === "#language" || step.element === "#theme"
+      );
+    }
+
+    // Desktop: tutti gli step
+    return allSteps;
+  };
 
   // Inizializzazione del driver
   const initializeDriver = () => {
