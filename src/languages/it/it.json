@@ -293,24 +293,15 @@
         "period": "mag 2024 - ott 2025",
         "duration": "17 mesi",
         "location": "Casalnuovo di Napoli, Campania, Italia · In sede",
+        "detail": "Durante questa esperienza ho contribuito alla progettazione e sviluppo di applicazioni frontend complesse con focus su React e TypeScript. Le attività principali hanno incluso:",
         "cardContent": [
-          "Sviluppato un sistema di gestione configurazioni per clienti e articoli, con focus su documentazione (JSDoc) e testing (Jest, React Testing Library, Playwright).",
-          "Creato componenti reattivi e gestito lo stato globale utilizzando TypeScript e React.",
-          "Progettato un sistema di reportistica per il reparto tecnico, ottimizzando documentazione e testing.",
-          "Implementato flussi di lavoro avanzati per il reparto assistenza, migliorandone l'efficienza.",
-          "Sviluppato strumenti per l'analisi delle attività amministrative con visualizzazioni basate su criteri specifici.",
-          "Gestito in autonomia lo sviluppo di applicazioni su larga scala.",
-          "Versionato e gestito il codice sorgente con TortoiseSVN.",
-          "Utilizzato principalmente React e MUI, implementando componenti custom, integrando API e seguendo i principali paradigmi della libreria.",
-          "Refactor completo di un'applicazione legacy scritta interamente in un unico file `App.js`. Il codice è stato suddiviso in folder per area funzionale, con creazione di componenti riutilizzabili, hook personalizzati e introduzione di contesto globale per gestione di errori e caricamenti.",
-          "Sviluppo di una web app per il riepilogo delle attività di fatturazione cliente, avviata tramite link dinamico contenente dati di inizializzazione. Inclusa gestione di descrizioni lunghe con visualizzazione completa tramite modale.",
-          "Creazione di un'applicazione per la gestione e l'invio di ticket da parte degli utenti finali, integrata con flussi di supporto tecnico e visualizzazione dei ticket in tempo reale.",
-          "Progettazione e sviluppo di una piattaforma per la gestione della fidelizzazione clienti. L'app consente a catene di brand di gestire campagne e scegliere tra diversi marchi all'avvio, visualizzando premi e vantaggi in base alla spesa.",
-          "Costruzione di una libreria di componenti condivisi con React e Storybook. Include componenti logici e visuali, documentati e riutilizzabili, pensati come base per tutti i progetti futuri.",
-          "Realizzazione di un'applicazione PHP/React per la gestione di etichette e traduzioni. Lo script backend elabora file, estrae etichette `LBL_*`, e popola un database relazionale. Interfaccia React + Vite con riepilogo, modifica e gestione multilingua.",
-          "Sviluppo di un’applicazione React + Vite + TypeScript per il monitoraggio e controllo dei dispositivi connessi. Include funzioni per connettere/disconnettere, avviare/spegnere e aggiungere dispositivi, con gestione in tempo reale.",
-          "Automazione della gestione di report in JSReport tramite script Node.js: recupero da server remoto, confronto con cartelle locali, rinomina con shortid, ed estrazione automatica di file `it.json` per generare un report JSON centralizzato.",
-          "Redazione di tre documenti guida sull'importanza e l'utilizzo pratico di: testing (Jest, RTL), documentazione (JSDoc) e Typescript nelle applicazioni React."
+          "Sviluppo e manutenzione di sistemi React complessi per la gestione di configurazioni clienti/articoli, attività tecniche, amministrative e di fatturazione.",
+          "Refactor completo di un’applicazione legacy, suddividendo logica, rendering e stato in componenti modulari, hook personalizzati e contesto globale (loading, errori, ecc.).",
+          "Implementazione di una libreria interna di componenti riutilizzabili documentata con Storybook e JSDoc, utilizzata in diversi progetti aziendali.",
+          "Realizzazione di un sistema di ticketing con flussi di supporto tecnico e gestione in tempo reale dello stato dei dispositivi (connessi/disconnessi).",
+          "Testing completo mediante Jest, React Testing Library e Playwright, seguendo una strategia di copertura e manutenibilità del codice.",
+          "Sviluppo di app multilingua con React, backend PHP/MariaDB e automazioni in Node.js. Gestione API e versionamento con TortoiseSVN.",
+          "Redazione di documentazione tecnica interna su testing, documentazione e adozione di TypeScript in React"
         ],
         "skills": [
           "Node JS",
@@ -342,12 +333,13 @@
         "period": "ott 2023 - mag 2024",
         "duration": "8 mesi",
         "location": "Casalnuovo di Napoli, Campania, Italia · In sede",
+        "detail": "Inserito in un team internazionale distribuito, ho partecipato attivamente allo sviluppo di soluzioni software full stack, collaborando quotidianamente con colleghi esteri e svolgendo le seguenti attività:",
         "cardContent": [
-          "Utilizzo di React con componenti MUI e custom",
-          "Chiamate API con Axios",
-          "Backend in Java + Spring Boot (microservizi REST)",
-          "PostgreSQL per la persistenza dati",
-          "Python per automazioni"
+          "Sviluppo frontend con React, integrando componenti MUI e custom, e implementando logiche di interazione con API REST tramite Axios.",
+          "Applicazione dei principali paradigmi React: componenti funzionali, hook personalizzati e gestione dello stato tra componenti.",
+          "Contributo parziale allo sviluppo backend con Java + Spring Boot (microservizi) e database PostgreSQL.",
+          "Creazione di script di automazione in Python per il supporto a task ripetitivi e gestione dati.",
+          "Questa esperienza ha consolidato le mie competenze in un ambiente tecnico internazionale, migliorando la mia autonomia, comunicazione e capacità di collaborazione in team distribuiti."
         ],
         "skills": [
           "HTML5",
@@ -374,8 +366,8 @@
         "period": "gen 2023 - lug 2023",
         "duration": "6 mesi",
         "location": "remoto",
+        "detail": "BootCamp intensivo per il corso Full-Stack Web Developer della durata di 6 mesi, per un totale di 950 ore formative, divise in teoria e progetti pratici quotidiani, i quali svolti sia in maniera individuale, sia in lavori di gruppo.",
         "cardContent": [
-          "BootCamp intensivo per il corso Full-Stack Web Developer della durata di 6 mesi, per un totale di 950 ore formative, divise in teoria e progetti pratici quotidiani, i quali svolti sia in maniera individuale, sia in lavori di gruppo.",
           "Frontend: HTML, CSS, JavaScript, Bootstrap, SASS, TypeScript.",
           "Backend: Java, Hibernate, Spring/Spring Boot",
           "Database: PostgreSQL"
@@ -411,9 +403,7 @@
         "duration": "5 anni",
         "location": "Napoli, NA",
         "vote": "76/100",
-        "cardContent": [
-          "Diploma di Specializzazione di 1° livello DS1 in Scienze dell'Economia e della Gestione Aziendale, Amministrazione e gestione aziendale, generale"
-        ],
+        "detail": "Diploma di Specializzazione di 1° livello DS1 in Scienze dell'Economia e della Gestione Aziendale, Amministrazione e gestione aziendale, generale",
         "skills": [
           "Informatica",
           "Inglese",

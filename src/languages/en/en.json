@@ -288,24 +288,15 @@
         "period": "may 2024 - oct 2025",
         "duration": "17 months",
         "location": "Casalnuovo of Naples, Campania, Italy · On site",
+        "detail": "During this experience, I contributed to the design and development of complex frontend applications with a focus on React and TypeScript. The main activities included:",
         "cardContent": [
-          "Developed a configuration management system for customers and items, with focus on documentation (JSDoc) and testing (Jest, React Testing Library, Playwright).",
-          "Created responsive components and managed global state using TypeScript and React.",
-          "Designed a reporting system for the technical department, optimizing documentation and testing.",
-          "Implemented advanced workflows for the service department, improving its efficiency. ",
-          "Developed tools for analyzing administrative tasks with visualizations based on specific criteria.",
-          "Independently managed large-scale application development.",
-          "Versioned and managed source code with TortoiseSVN.",
-          "Primarily used React and MUI, implementing custom components, integrating APIs, and following the main library paradigms.",
-          "Complete refactor of a legacy application written entirely in a single `App.js` file. Code was divided into folders by functional area, with creation of reusable components, custom hooks and introduction of global context for error and load handling.",
-          "Development of a web app for summarizing customer billing activities, initiated via dynamic link containing initialization data. Including management of long descriptions with full visualization via modal.",
-          "Creation of an app for end-user ticket management and submission, integrated with technical support flows and real-time ticket visualization.",
-          "Design and development of a customer loyalty management platform. The app allows brand chains to manage campaigns and choose from different brands at startup, displaying rewards and benefits based on spend.",
-          "Construction of a shared component library with React and Storybook. Includes logical and visual components, documented and reusable, designed as a basis for all future projects.",
-          "Building a PHP/React application for label and translation management. Backend script processes files, extracts `LBL_*` labels, and populates a relational database. React + Screw interface with summarization, editing, and multilingual management.",
-          "Development of a React + Screw + TypeScript application for monitoring and controlling connected devices. Includes functions to connect/disconnect, start/stop and add devices, with real-time management.",
-          "Automation of report management in JSReport using Node.js scripts: retrieval from remote server, comparison with local folders, renaming with shortid, and automatic extraction of `it.json` files to generate a centralized JSON report.",
-          "Drafting of three guidance documents on the importance and practical use of: testing (Jest, RTL), documentation (JSDoc) and Typescript in React applications."
+          "Development and maintenance of complex React systems for the management of customer/item configurations, technical, administrative and billing activities.",
+          "Complete refactor of a legacy application, breaking down logic, rendering and state into modular components, custom hooks and global context (loading, errors, etc.).",
+          "Implementation of an internal library of reusable components documented with Storybook and JSDoc, used in several company projects. ",
+          "Implementation of a ticketing system with technical support flows and real-time management of device status (connected/disconnected).",
+          "Comprehensive testing using Jest, React Testing Library and Playwright, following a strategy of code coverage and maintainability.",
+          "Development of multilingual apps with React, PHP/MariaDB backend and automations in Node.js. API and versioning management with TortoiseSVN.",
+          "Drafting internal technical documentation on testing, documentation and adoption of TypeScript in React."
         ],
         "skills": [
           "Node JS",
@@ -316,7 +307,7 @@
           "Jest",
           "React Testing Library",
           "Playwright",
-          "Documentazione",
+          "Documentation",
           "JSdoc",
           "TSdoc",
           "TypeDoc",
@@ -337,12 +328,13 @@
         "period": "oct 2023 - may 2024",
         "duration": "8 months",
         "location": "Casalnuovo of Naples, Campania, Italy · On site",
+        "detail": "As part of a distributed international team, I actively participated in the development of full stack software solutions, collaborating with foreign colleagues on a daily basis and performing the following tasks:",
         "cardContent": [
-          "Using React with MUI and custom components",
-          "API calls with Axios",
-          "Backend in Java + Spring Boot (REST microservices)",
-          "PostgreSQL for data persistence",
-          "Python for automations"
+          "Frontend development with React, integrating MUI and custom components, and implementing REST API interaction logic via Axios.",
+          "Application of the main React paradigms: functional components, custom hooks and state management between components.",
+          "Partial contribution to backend development with Java + Spring Boot (microservices) and PostgreSQL database. ",
+          "Creating automation scripts in Python to support repetitive tasks and data management.",
+          "This experience consolidated my skills in an international technical environment, improving my autonomy, communication and collaboration skills in distributed teams."
         ],
         "skills": [
           "HTML5",
@@ -369,8 +361,8 @@
         "period": "jan 2023 - jul 2023",
         "duration": "6 months",
         "location": "remote",
+        "detail": "Intensive BootCamp for the Full-Stack Web Developer course lasting 6 months, totaling 950 training hours, divided into theory and daily hands-on projects, which were carried out both individually and in group work.",
         "cardContent": [
-          "Intensive BootCamp for the Full-Stack Web Developer course lasting 6 months, totaling 950 training hours, divided into theory and daily hands-on projects, which were carried out both individually and in group work.",
           "Frontend: HTML, CSS, JavaScript, Bootstrap, SASS, TypeScript.",
           "Backend: Java, Hibernate, Spring/Spring Boot",
           "Database: PostgreSQL"
@@ -406,9 +398,7 @@
         "duration": "5 years",
         "location": "Naples, Italy",
         "vote": "76/100",
-        "cardContent": [
-          "DS1 Level 1 Postgraduate Diploma in Economics and Business Management, Business Administration and Management, General"
-        ],
+        "detail": "DS1 Level 1 Postgraduate Diploma in Economics and Business Management, Business Administration and Management, General",
         "skills": [
           "Computer Science",
           "English",

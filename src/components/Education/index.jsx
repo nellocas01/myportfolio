@@ -80,7 +80,8 @@ export default () => {
                 </Typography>
 
                 <Box component="ul" sx={{ pl: 2, mb: 2 }}>
-                  {work.cardContent.map((item, idx) => (
+                  <Typography variant="body1">{work.detail}</Typography>
+                  {work.cardContent?.map((item, idx) => (
                     <li key={idx}>
                       <Typography variant="body2">{item}</Typography>
                     </li>
