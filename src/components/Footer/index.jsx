@@ -17,12 +17,15 @@ import { useAppContext } from "../../context/AppContext";
 import { NavbarData } from "../../mockup";
 import ColoredText from "../Text/index";
 import { useThemeContext } from "../../context/theme";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const { setIsLoading, setError, loading } = useAppContext();
   const theme = useTheme();
   const formRef = useRef();
   const { isMobile, isDarkMode } = useThemeContext();
+  const { t } = useTranslation();
+  const footer = t("footer", { returnObjects: true });
   const [status, setStatus] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -64,7 +67,7 @@ const Footer = () => {
         <Container maxWidth="lg" id="contacts">
           <ColoredText
             variant={isMobile ? "h5" : "h4"}
-            text={"Contatti"}
+            text={t("footer.text")}
             colors={isDarkMode ? NavbarData.colors : NavbarData.colorsLight}
             style={{
               marginBottom: 5,
@@ -75,7 +78,7 @@ const Footer = () => {
             {/* SOCIAL */}
             <Grid2 size={{ xs: 12, md: 6 }}>
               <Typography variant="h6" gutterBottom>
-                Canali social
+                {footer.title}
               </Typography>
               <Box>
                 <IconButton
@@ -100,13 +103,13 @@ const Footer = () => {
             {/* CONTATTO */}
             <Grid2 size={{ xs: 12, md: 6 }}>
               <Typography variant="h6" gutterBottom>
-                Scrivimi una email
+                {footer.email}
               </Typography>
               <form ref={formRef} onSubmit={sendEmail}>
                 <TextField
                   name="user_name"
                   fullWidth
-                  label="Nome"
+                  label={footer.lblname}
                   variant="outlined"
                   margin="dense"
                   sx={{ backgroundColor: "transparent" }}
@@ -115,7 +118,7 @@ const Footer = () => {
                 <TextField
                   name="user_email"
                   fullWidth
-                  label="Email"
+                  label={footer.lblemail}
                   variant="outlined"
                   margin="dense"
                   type="email"
@@ -125,7 +128,7 @@ const Footer = () => {
                 <TextField
                   name="message"
                   fullWidth
-                  label="Messaggio"
+                  label={footer.lblmsg}
                   variant="outlined"
                   margin="dense"
                   multiline
@@ -140,17 +143,17 @@ const Footer = () => {
                   sx={{ mt: 2 }}
                   disabled={loading}
                 >
-                  {loading ? "Invio in corso..." : "Invia"}
+                  {loading ? `${footer.btn}` : `${footer.btn2}`}
                 </Button>
               </form>
               {status === "success" && (
                 <Alert severity="success" sx={{ mt: 2 }}>
-                  Messaggio inviato con successo!
+                  {footer.success}
                 </Alert>
               )}
               {status === "error" && (
                 <Alert severity="error" sx={{ mt: 2 }}>
-                  Errore durante l'invio. Riprova più tardi.
+                  {footer.error}
                 </Alert>
               )}
             </Grid2>
@@ -159,7 +162,7 @@ const Footer = () => {
           {/* BOTTOM */}
           <Box mt={5} textAlign="center">
             <Typography variant="body2" color="text.secondary">
-              © 2025 Casolla Aniello. Tutti i diritti riservati. —
+              {footer.bottom}
             </Typography>
             <Button onClick={() => setOpen(true)}>Privacy Policy</Button>
           </Box>
@@ -187,32 +190,9 @@ const Footer = () => {
               maxHeight: "70vh",
             }}
           >
-            Privacy Policy Ultimo aggiornamento: [07 Luglio 2025] Questo sito
-            web è gestito da [Aniello Casolla]. Il sito ha lo scopo di
-            presentare i miei progetti professionali e offrire un modo per
-            contattarmi. Il titolare del trattamento dei dati è: [Casolla
-            Aniello] Dati raccolti Tramite il modulo di contatto, vengono
-            raccolti i seguenti dati: - Nome (campo obbligatorio) - Indirizzo
-            email (campo obbligatorio) - Messaggio (campo libero) I dati vengono
-            inviati direttamente alla mia casella di posta elettronica e non
-            vengono salvati in alcun database. Finalità del trattamento I dati
-            forniti vengono utilizzati esclusivamente per rispondere al tuo
-            messaggio. Non verranno utilizzati per finalità di marketing né
-            condivisi con terze parti. Base giuridica Il trattamento dei dati è
-            basato sul consenso dell’utente, espresso tramite l’invio volontario
-            del modulo. Conservazione dei dati I dati sono conservati
-            all’interno della mia casella di posta elettronica per il tempo
-            necessario a gestire la comunicazione. Cookie Questo sito non
-            utilizza cookie di profilazione. Tuttavia, Vercel, il provider di
-            hosting, potrebbe impostare cookie tecnici per motivi di sicurezza o
-            prestazioni. Per maggiori informazioni, visita la [Privacy Policy di
-            Vercel](https://vercel.com/legal/privacy-policy). Diritti
-            dell’utente Hai il diritto di: - Accedere ai tuoi dati - Chiederne
-            la rettifica o la cancellazione - Revocare il consenso - Opporsi al
-            trattamento Modifiche Questa policy può essere aggiornata. La
-            versione attuale è sempre disponibile su questa pagina.
+            {footer.privacyPolicy}
           </div>
-          <Button onClick={() => setOpen(false)}>Chiudi</Button>
+          <Button onClick={() => setOpen(false)}> {footer.btn3}</Button>
         </Box>
       </Modal>
     </>

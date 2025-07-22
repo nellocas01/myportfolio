@@ -452,6 +452,21 @@
       }
     ]
   },
+  "footer": {
+    "text": "Contacts",
+    "title": "Social channels",
+    "email": "Write me an email",
+    "lblname": "Name",
+    "lblemail": "Email",
+    "lblmsg": "Message",
+    "btn": "Sending...",
+    "btn2": "Send",
+    "success": "Message successfully sent!",
+    "error": "Error while sending. Please try again later.",
+    "bottom": "© 2025 Casolla Aniello. All rights reserved. —",
+    "privacyPolicy": "Privacy Policy Last updated: [07 July 2025] This website is operated by [Aniello Casolla]. The purpose of the site is to present my professional projects and offer a way to contact me. The data controller is: [Casolla Aniello] Data collected Through the contact form, the following data are collected: - Name (compulsory field) - Email address (compulsory field) - Message (free field) The data is sent directly to my email inbox and is not saved in any database. Purpose of processing The data provided will be used exclusively to reply to your message. They will not be used for marketing purposes or shared with third parties. Legal basis Data processing is based on the user's consent, which is given by voluntarily submitting the form. Data retention The data is kept in my inbox for the time necessary to manage the communication. Cookies This site does not use profiling cookies. However, Vercel, the hosting provider, may set technical cookies for security or performance reasons. For more information, please visit [Vercel's Privacy Policy](https://vercel.com/legal/privacy-policy). User rights You have the right to: - Access to your data - Request rectification or deletion - Withdraw consent - Object to processing Changes This policy may be updated. The current version is always available on this page.",
+    "btn3": "Close"
+  },
   "home": {
     "h4": "Naples, Campania, Italy",
     "h5": "Download my CV"
