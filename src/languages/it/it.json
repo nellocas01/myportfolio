@@ -14,7 +14,7 @@
     "themeDescription": "Scegli il tema preferito"
   },
   "navbar": {
-    "myName": "Casolla_Aniello",
+    "myName": "Aniello_Casolla",
     "about": "Su_di_me",
     "skill": "Abilità",
     "projects": "Progetti_personali",
@@ -134,6 +134,7 @@
         "repoUrl": "https://github.com/nellocas01/myportfolio.git",
         "dialog": {
           "title": "Portfolio",
+          "description": "Questo progetto è il mio portfolio personale sviluppato con React, pensato per presentare le mie esperienze, competenze tecniche e progetti, il tutto con una UI moderna, responsive e multilingua.",
           "btn": "Chiudi"
         }
       },
@@ -149,7 +150,7 @@
         "repoUrl": "https://github.com/nellocas01/BW3.git",
         "dialog": {
           "title": "Linkedin clone",
-          "description": "Implementazione frontend in stile Linkedin",
+          "description": "Questo progetto è una riproduzione parziale dell’interfaccia di LinkedIn, realizzata con React e Redux. L’obiettivo è simulare l’esperienza utente del noto social professionale, integrando dinamicamente contenuti tramite API pubbliche e gestendo stato globale, errori e caricamenti asincroni.",
           "btn": "Chiudi"
         }
       },
@@ -181,7 +182,7 @@
         "repoUrl": "https://github.com/nellocas01/netflix-clone",
         "dialog": {
           "title": "Netflix clone",
-          "description": "Implementazione frontend in stile Netflix",
+          "description": "Questo progetto è una riproduzione parziale dell’interfaccia di Netflix, realizzata con React. L’obiettivo è simulare un’esperienza simile a quella della piattaforma originale, integrando dinamicamente contenuti tramite API pubbliche (OMDb API). Il progetto è stato realizzato per consolidare competenze in ambito React, gestione dello stato con Context API, React Router, UI componenti riutilizzabili con React-Bootstrap, e consumo di API esterne.",
           "btn": "Chiudi"
         }
       },
@@ -197,7 +198,7 @@
         "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
         "dialog": {
           "title": "Spotify clone",
-          "description": "Implementazione frontend in stile Spotify",
+          "description": "Questo progetto è una riproduzione parziale di Spotify realizzata con HTML, CSS e JavaScript. L’obiettivo è creare un’interfaccia dinamica che mostri album, artisti e tracce, integrando le API pubbliche di Deezer per la parte dati. È stato sviluppato come esercizio pratico per consolidare competenze su fetch API, manipolazione DOM, gestione dinamica delle pagine tramite query string e responsive design.",
           "btn": "Chiudi"
         }
       },
@@ -245,7 +246,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git",
         "dialog": {
           "title": "StonksBall FrontEnd",
-          "description": "Progetto finale FrontEnd del corso Full Stack Developer di EPICODE",
+          "description": "Repository Frontend del progetto StonksBall, un'applicazione web sviluppata come progetto finale del corso Full Stack Developer EPICODE.",
           "btn": "Chiudi"
         }
       },
@@ -261,7 +262,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git",
         "dialog": {
           "title": "StonksBall BackEnd",
-          "description": "Progetto finale BackEnd del corso Full Stack Developer di EPICODE",
+          "description": "Repository Backend del progetto StonksBall, un'applicazione web sviluppata come progetto finale del corso Full Stack Developer EPICODE.",
           "btn": "Chiudi"
         }
       },

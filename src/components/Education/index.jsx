@@ -9,7 +9,6 @@ import {
   Chip,
   Container,
   Divider,
-  Link,
   Stack,
   Typography,
 } from "@mui/material";
@@ -111,17 +110,6 @@ export default () => {
                     )}
                   </a>
                 </Stack>
-
-                {work.linkedin && (
-                  <Link
-                    href={work.linkedin}
-                    target="_blank"
-                    rel="noopener"
-                    underline="hover"
-                  >
-                    🔗 Profilo LinkedIn
-                  </Link>
-                )}
               </AccordionDetails>
             </Accordion>
           ))}

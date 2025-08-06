@@ -134,6 +134,7 @@
         "repoUrl": "https://github.com/nellocas01/myportfolio.git",
         "dialog": {
           "title": "Portfolio",
+          "description": "This project is my personal portfolio developed with React, designed to showcase my experience, technical skills and projects, all with a modern, responsive and multilingual UI",
           "btn": "Close"
         }
       },
@@ -149,6 +150,7 @@
         "repoUrl": "https://github.com/nellocas01/BW3.git",
         "dialog": {
           "title": "Linkedin clone",
+          "description": "This project is a partial reproduction of the Linkedin interface, built with React and Redux. The goal is to simulate the user experience of the well-know professional social network, dynamically integrating content via public APIs and managing golbal state, errors and asynchronous loading",
           "btn": "Close"
         }
       },
@@ -180,6 +182,7 @@
         "repoUrl": "https://github.com/nellocas01/netflix-clone",
         "dialog": {
           "title": "Netflix clone",
+          "description": "This project is a partial reproduction of Netflix interface, created with React. The goal is to simulate an experience similar to that of the original platform, dynamically integrating content via public APIs (OMDb API). The project was created to consolidate skills in React, state management with Context API, React Router, UI components with React-Bootstrap, and consumption of external APIs.",
           "btn": "Close"
         }
       },
@@ -195,6 +198,7 @@
         "repoUrl": "https://github.com/nellocas01/BW2-Spotify-Clone.git",
         "dialog": {
           "title": "Spotify clone",
+          "description": "This project is a partial reproduction of Spotify created with HTML, CSS and JavaScript. The goal is to create a dynamic interface that displays albums, artist and tracks, intregrating Deezer's public APIs for the data part. It was developed as a pratical exercise to consolidate skills in fetch APIs, DOM manipulation, dynamic page management via query strings and responsive design.",
           "btn": "Close"
         }
       },
@@ -242,6 +246,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-FrontEnd.git",
         "dialog": {
           "title": "StonksBall FrontEnd",
+          "description": "Frontend repository for the StonksBall project, a web application developed as the final project for the EPICODE Full Stack Developer course",
           "btn": "Close"
         }
       },
@@ -257,6 +262,7 @@
         "repoUrl": "https://github.com/nellocas01/Capstone-Project-FS0123-.git",
         "dialog": {
           "title": "StonksBall BackEnd",
+          "description": "Backend repository for the StonksBall project, a web application developed as the final project for the EPICODE Full Stack Developer course",
           "btn": "Close"
         }
       },
