@@ -31,23 +31,23 @@ import MuiIcon from "../../assets/muiicn.png";
 const skills = [
   { src: HtmlIcon, alt: "HTML" },
   { src: CssIcon, alt: "CSS" },
-  { src: JavascriptIcon, alt: "JavaScript" },
+  // { src: JavascriptIcon, alt: "JavaScript" },
   { src: TypescriptIcon, alt: "TypeScript" },
   { src: ReactIcon, alt: "React" },
-  { src: ReduxIcon, alt: "Redux" },
+  // { src: ReduxIcon, alt: "Redux" },
   { src: JestIcon, alt: "Jest" },
-  { src: JavaIcon, alt: "Java" },
-  { src: SpringbootIcon, alt: "Spring Boot" },
+  // { src: JavaIcon, alt: "Java" },
+  // { src: SpringbootIcon, alt: "Spring Boot" },
   { src: GitIcon, alt: "Git" },
-  { src: MuiIcon, alt: "Material UI" },
-  { src: BootstrapIcon, alt: "Bootstrap" },
-  { src: NodeIcon, alt: "Node.js" },
+  // { src: MuiIcon, alt: "Material UI" },
+  // { src: BootstrapIcon, alt: "Bootstrap" },
+  // { src: NodeIcon, alt: "Node.js" },
   { src: PlaywrightIcon, alt: "Playwright" },
-  { src: PostgresqlIcon, alt: "PostgreSQL" },
-  { src: PostmanIcon, alt: "Postman" },
+  // { src: PostgresqlIcon, alt: "PostgreSQL" },
+  // { src: PostmanIcon, alt: "Postman" },
   { src: ReacttestinglibIcon, alt: "React Testing Library" },
-  { src: SassIcon, alt: "Sass" },
-  { src: SqlIcon, alt: "SQL" },
+  // { src: SassIcon, alt: "Sass" },
+  // { src: SqlIcon, alt: "SQL" },
 ];
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -77,7 +77,7 @@ export default () => {
           sx={{ marginTop: "2rem" }}
         >
           {skills.map((skill, index) => (
-            <Grid size={{ xs: 4, sm: 4, md: 3, lg: 2 }} key={skill.alt}>
+            <Grid size={{ xs: 4, sm: 3, md: 3, lg: 1 }} key={skill.alt}>
               <Box
                 sx={{
                   display: "flex",

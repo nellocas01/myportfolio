@@ -50,19 +50,21 @@ export default () => {
   // hook per controllare lo scroll manualmente
   const carouselRef = useRef(null);
 
-  // funzione per scrollare a sinistra
-  const scrollLeft = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
-    }
+  const GAP_PX = 16;
+  const CARD_MAX = 320;
+  const cardsToShow = isMobile ? 1 : isTablet ? 2 : 3;
+
+  // funzione per gestire lo scroll al click sulle frecce
+  const scrollByOne = (dir) => {
+    if (!carouselRef.current) return;
+    const item = carouselRef.current.querySelector("[data-card-item]");
+    if (!item) return;
+    const step = item.getBoundingClientRect().width + GAP_PX; // slot + gap
+    carouselRef.current.scrollBy({ left: dir * step, behavior: "smooth" });
   };
 
-  // funzione per scrollare a sinistra
-  const scrollRight = () => {
-    if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
-    }
-  };
+  const scrollLeft = () => scrollByOne(-1);
+  const scrollRight = () => scrollByOne(1);
 
   return (
     <>
@@ -132,12 +134,9 @@ export default () => {
           <IconButton
             onClick={scrollLeft}
             sx={{
-              backgroundColor: "grey",
-              position: "absolute",
-              left: 0,
-              zIndex: 2,
-              boxShadow: 1,
-              display: isMobile ? "none" : "block",
+              margin: 2,
+              transition: "0.3s",
+              "&:hover": { transform: "scale(1.2)", color: "primary.main" },
             }}
           >
             <NavigateBeforeIcon />
@@ -149,41 +148,41 @@ export default () => {
             sx={{
               display: "flex",
               gap: 2,
-              overflowX: isMobile ? "auto" : "hidden",
+              overflowX: "hidden",
               width: "100%",
-              scrollSnapType: isMobile ? "x mandatory" : "none",
-              paddingX: isMobile ? 1 : 0,
+              scrollSnapType: "x mandatory",
               scrollBehavior: "smooth",
-              "&::-webkit-scrollbar": { height: "6px" },
-              "&::-webkit-scrollbar-thumb": {
-                backgroundColor: "#888",
-                borderRadius: 10,
-              },
             }}
           >
             {projects.map((project, index) => (
               <Box
                 key={index}
+                data-card-item
                 sx={{
-                  flex: "0 0 300px",
-                  minWidth: "300px",
-                  scrollSnapAlign: isMobile ? "start" : "none",
+                  // N slot esatti visibili, inclusi i gap
+                  flex: `0 0 calc((100% - ${
+                    (cardsToShow - 1) * GAP_PX
+                  }px) / ${cardsToShow})`,
+                  scrollSnapAlign: "start",
+                  display: "flex",
+                  justifyContent: "center",
                 }}
               >
-                {" "}
-                {/* Card con larghezza fissa */}
-                <Cards
-                  bgAvatarColor={project.bgAvatarColor}
-                  avatar={project.avatar}
-                  title={project.title}
-                  subheader={project.subheader}
-                  image={getImageUrl(project.image)}
-                  alt={project.alt}
-                  cardContent={project.cardContent}
-                  btn={project.btn}
-                  repoUrl={project.repoUrl}
-                  dialog={project.dialog}
-                />
+                {/* card centrata e limitata, lo slot resta largo quanto serve */}
+                <Box sx={{ width: "100%", maxWidth: `${CARD_MAX}px` }}>
+                  <Cards
+                    bgAvatarColor={project.bgAvatarColor}
+                    avatar={project.avatar}
+                    title={project.title}
+                    subheader={project.subheader}
+                    image={getImageUrl(project.image)}
+                    alt={project.alt}
+                    cardContent={project.cardContent}
+                    btn={project.btn}
+                    repoUrl={project.repoUrl}
+                    dialog={project.dialog}
+                  />
+                </Box>
               </Box>
             ))}
           </Box>
@@ -192,12 +191,9 @@ export default () => {
           <IconButton
             onClick={scrollRight}
             sx={{
-              backgroundColor: "grey",
-              position: "absolute",
-              right: 0,
-              zIndex: 2,
-              boxShadow: 1,
-              display: isMobile ? "none" : "block",
+              margin: 2,
+              transition: "0.3s",
+              "&:hover": { transform: "scale(1.2)", color: "primary.main" },
             }}
           >
             <NavigateNextIcon />

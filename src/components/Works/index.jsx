@@ -80,7 +80,17 @@ export default () => {
                   ))}
                 </Box>
 
-                <Stack direction="row" spacing={1} flexWrap="wrap" mb={2}>
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  flexWrap="wrap"
+                  mb={2}
+                  sx={{
+                    "& .MuiChip-root": {
+                      marginTop: "8px",
+                    },
+                  }}
+                >
                   {work.skills.map((skill, idx) => (
                     <Chip key={idx} label={skill} size="small" />
                   ))}

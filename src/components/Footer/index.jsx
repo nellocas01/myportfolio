@@ -77,9 +77,9 @@ const Footer = () => {
           <Grid2 container spacing={4}>
             {/* SOCIAL */}
             <Grid2 size={{ xs: 12, md: 6 }}>
-              <Typography variant="h6" gutterBottom>
+              {/* <Typography variant="h6" gutterBottom>
                 {footer.title}
-              </Typography>
+              </Typography> */}
               <Box>
                 <IconButton
                   href="https://github.com/nellocas01"

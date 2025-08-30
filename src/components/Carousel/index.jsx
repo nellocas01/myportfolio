@@ -94,7 +94,7 @@ export default () => {
             bottom: 0,
             left: 0,
             height: "4px",
-            width: `${progress}%`,
+            width: !isTablet ? `${progress - 5}%` : `${progress}%`,
             backgroundColor: "primary.main",
             transition: "width linear",
           }}
